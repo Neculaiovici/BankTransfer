@@ -1,5 +1,5 @@
-export class Transfer{
-    FromEmail?:string
-    ToEmail?: string
-    Amount?:string
+export interface Transfer{
+    FromEmail:string
+    ToEmail: string
+    Amount:string
 }

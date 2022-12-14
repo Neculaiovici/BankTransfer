@@ -1,9 +1,9 @@
 <h1>Transfer money</h1>
 <div>
-    <form [formGroup]="form" (ngSubmit)="TransferMoney()">
-        <input [(ngModel)]="transfer.FromEmail" placeholder="fromEmail" formControlName="fromEmail">
-        <input [(ngModel)]="transfer.ToEmail" placeholder="toEmail" formControlName="toEmail">
-        <input [(ngModel)]="transfer.Amount" placeholder="amount" formControlName="amount">
+    <form [formGroup]="transferFC" (ngSubmit)="submit()">
+        <input placeholder="fromEmail" formControlName="fromEmail" required>
+        <input placeholder="toEmail" formControlName="toEmail" required>
+        <input placeholder="amount" formControlName="amount" required>
         <button>Transfer</button>
     </form>
 </div>

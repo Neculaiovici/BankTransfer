@@ -23,14 +23,9 @@ export class ServicesService {
 
 
   //transfer money
-  trensferMoney(transfer: Transfer):Observable<any>{
-    const body  = JSON.stringify(transfer);
+  trensferMoney(fromEmail:string, toEmail:string, amount:string):Observable<any>{
+    const body = {fromEmail: fromEmail, toEmail: toEmail, amount: amount}
     const headers = new HttpHeaders().set('Content-Type', 'application/json; charset=utf-8');
-    // let formData = new FormData();
-    // formData.append('fromEmail', transfer.FromEmail);
-    // formData.append('toEmail', transfer.ToEmail);
-    // formData.append('amount', transfer.Amount)
-
     return this.http.post(`${this.url}/transfer`, body, {headers: headers, observe: 'response'})
       .pipe(catchError(this.handleError));
   }

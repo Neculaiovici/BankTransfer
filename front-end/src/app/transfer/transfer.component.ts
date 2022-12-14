@@ -1,6 +1,7 @@
-import { asNativeElements, Component, ElementRef, Input, OnInit, ViewChild } from '@angular/core';
+import { HttpResponseBase } from '@angular/common/http';
+import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
-import { Transfer } from '../models/transfer.interface';
+import { Account } from '../models/account.interface';
 import { ServicesService } from '../services.service';
 
 @Component({
@@ -10,7 +11,7 @@ import { ServicesService } from '../services.service';
 })
 export class TransferComponent implements OnInit {
   
-  form: FormGroup = this.fb.group({
+  transferFC: FormGroup = this.fb.group({
     'fromEmail': ['', Validators.compose([
       Validators.minLength(5),
       Validators.maxLength(20),
@@ -32,8 +33,6 @@ export class TransferComponent implements OnInit {
     ])]
   })
 
-  transfer = new Transfer()
-
   constructor(private fb: FormBuilder,private services: ServicesService) { }
 
   ngOnInit(): void {
@@ -45,11 +44,20 @@ export class TransferComponent implements OnInit {
     
   }
 
-  //transfer money
-  TransferMoney(){
-    this.services.trensferMoney(this.transfer).subscribe( data => {
-      console.log(data)
-    })
+  submit(){
+    const fromEmail = this.transferFC.value.fromEmail
+    const toEmail = this.transferFC.value.toEmail
+    const amount = this.transferFC.value.amount
+    return this.services.trensferMoney(fromEmail, toEmail, amount).subscribe(
+      this.handleError
+    )
   }
 
+  private handleError(error: HttpResponseBase | Error): void {
+    console.log(error)
+    if (error instanceof HttpResponseBase)
+      if (error.status == 401)
+        throw Error("Invalid email, amount combination")
+    throw error
+  }
 }
