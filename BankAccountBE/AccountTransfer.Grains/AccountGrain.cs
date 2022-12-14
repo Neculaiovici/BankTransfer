@@ -16,7 +16,6 @@ public record class Balance
 public class AccountGrain : Grain, IAccountGrain
 {
     private readonly ITransactionalState<Balance> _balance;
-
     public AccountGrain(
         [TransactionalState("balance")] ITransactionalState<Balance> balance) =>
         _balance = balance ?? throw new ArgumentNullException(nameof(balance));
@@ -47,4 +46,5 @@ public class AccountGrain : Grain, IAccountGrain
 
     public Task<uint> GetBalance() =>
         _balance.PerformRead(balance => balance.Value);
+
 }
