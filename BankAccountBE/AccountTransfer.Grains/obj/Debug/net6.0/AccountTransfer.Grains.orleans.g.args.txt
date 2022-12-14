@@ -1,14 +1,14 @@
 LogLevel:Warning
-ProjectPath:C:\Users\robert.mocanu\Desktop\BankAccount\AccountTransfer.Grains\AccountTransfer.Grains.csproj
+ProjectPath:C:\Users\robert.mocanu\Desktop\bankTransfer\BankAccountBE\AccountTransfer.Grains\AccountTransfer.Grains.csproj
 ProjectGuid:
 AssemblyName:AccountTransfer.Grains
 OutputType:Library
-TargetPath:C:\Users\robert.mocanu\Desktop\BankAccount\AccountTransfer.Grains\bin\Debug\net6.0\AccountTransfer.Grains.dll
-CodeGenOutputFile:C:\Users\robert.mocanu\Desktop\BankAccount\AccountTransfer.Grains\obj\Debug\net6.0\AccountTransfer.Grains.orleans.g.cs
-Compile:C:\Users\robert.mocanu\Desktop\BankAccount\AccountTransfer.Grains\AccountGrain.cs
-Compile:C:\Users\robert.mocanu\Desktop\BankAccount\AccountTransfer.Grains\AtmGrain.cs
-Compile:C:\Users\robert.mocanu\Desktop\BankAccount\AccountTransfer.Grains\obj\Debug\net6.0\AccountTransfer.Grains.GlobalUsings.g.cs
-Reference:C:\Users\robert.mocanu\Desktop\BankAccount\AccountTransfer.Interfaces\bin\Debug\net6.0\AccountTransfer.Interfaces.dll
+TargetPath:C:\Users\robert.mocanu\Desktop\bankTransfer\BankAccountBE\AccountTransfer.Grains\bin\Debug\net6.0\AccountTransfer.Grains.dll
+CodeGenOutputFile:C:\Users\robert.mocanu\Desktop\bankTransfer\BankAccountBE\AccountTransfer.Grains\obj\Debug\net6.0\AccountTransfer.Grains.orleans.g.cs
+Compile:C:\Users\robert.mocanu\Desktop\bankTransfer\BankAccountBE\AccountTransfer.Grains\AccountGrain.cs
+Compile:C:\Users\robert.mocanu\Desktop\bankTransfer\BankAccountBE\AccountTransfer.Grains\AtmGrain.cs
+Compile:C:\Users\robert.mocanu\Desktop\bankTransfer\BankAccountBE\AccountTransfer.Grains\obj\Debug\net6.0\AccountTransfer.Grains.GlobalUsings.g.cs
+Reference:C:\Users\robert.mocanu\Desktop\bankTransfer\BankAccountBE\AccountTransfer.Interfaces\bin\Debug\net6.0\AccountTransfer.Interfaces.dll
 Reference:C:\Users\robert.mocanu\.nuget\packages\microsoft.aspnetcore.connections.abstractions\6.0.0\lib\net6.0\Microsoft.AspNetCore.Connections.Abstractions.dll
 Reference:C:\Users\robert.mocanu\.nuget\packages\microsoft.bcl.asyncinterfaces\6.0.0\lib\netstandard2.1\Microsoft.Bcl.AsyncInterfaces.dll
 Reference:C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\6.0.11\ref\net6.0\Microsoft.CSharp.dll
@@ -193,4 +193,4 @@ Reference:C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\6.0.11\ref\net
 Reference:C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\6.0.11\ref\net6.0\System.Xml.XPath.XDocument.dll
 Reference:C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\6.0.11\ref\net6.0\WindowsBase.dll
 DefineConstants:TRACE,DEBUG,NET,NET6_0,NETCOREAPP
-InputHash:0c5a31f165f195c3e432cab1d9784ba5d1996f54
+InputHash:d20fa82ddc3929db9b71bd61ed70d1fda0650453

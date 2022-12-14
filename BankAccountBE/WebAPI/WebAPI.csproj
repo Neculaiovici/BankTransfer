@@ -15,4 +15,8 @@
 	<ProjectReference Include="..\AccountTransfer.Interfaces\AccountTransfer.Interfaces.csproj" />
 </ItemGroup>
 
+<ItemGroup>
+  <Folder Include="Dtos\" />
+</ItemGroup>
+
 </Project>

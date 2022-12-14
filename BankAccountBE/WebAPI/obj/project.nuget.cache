@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "iIO/bCS61Hn56BWfTSdbDZHmgR53//mWw49eqqTqU20JCqnKgV75Bfv82oHlGjYL0DiefNdbGBaGVHtAM4sN9A==",
+  "dgSpecHash": "rBu5/nZvXLXyK7lHriJt5aB4HPFuu3cqaRBlV0N6xhz7wQj9Gl5sMAobNyGn/0g+X7i0NVBb5Boa6I3cP55E7w==",
   "success": true,
-  "projectFilePath": "C:\\Users\\robert.mocanu\\Desktop\\BankAccount\\WebAPI\\WebAPI.csproj",
+  "projectFilePath": "C:\\Users\\robert.mocanu\\Desktop\\bankTransfer\\BankAccountBE\\WebAPI\\WebAPI.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\robert.mocanu\\.nuget\\packages\\microsoft.aspnetcore.connections.abstractions\\6.0.0\\microsoft.aspnetcore.connections.abstractions.6.0.0.nupkg.sha512",
     "C:\\Users\\robert.mocanu\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\6.0.0\\microsoft.bcl.asyncinterfaces.6.0.0.nupkg.sha512",

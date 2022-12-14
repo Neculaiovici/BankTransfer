@@ -5,7 +5,7 @@ using AccountTransfer.Interfaces;
 using AccountTransfer.Interfaces.States;
 using Microsoft.AspNetCore.Mvc;
 using Orleans;
-
+using WebAPI.Dtos;
 
 namespace WebAPI.Controllers
 {
@@ -28,13 +28,13 @@ namespace WebAPI.Controllers
         }
 
         [HttpPost("transfer")]
-        public async Task<BankAccount> Transfer([FromBody] fromEmail, [FromBody] toEmail, [FromBody] amount)
+        public async Task<BankAccount> Transfer([FromBody] Transfer transfer)
         {
-            var c = _client.GetGrain<IAccountGrain>(fromEmail);
-            var to = _client.GetGrain<IAccountGrain>(toEmail);
+            var c = _client.GetGrain<IAccountGrain>(transfer.fromEmail);
+            var to = _client.GetGrain<IAccountGrain>(transfer.toEmail);
 
             var atm = _client.GetGrain<IAtmGrain>(0);
-            await atm.Transfer(c, to, amount);
+            await atm.Transfer(c, to, transfer.amount);
 
             var res = await c.GetAccount();
             return res;

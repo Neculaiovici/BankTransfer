@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "O93riqSYesLwaYwNL7VIC2nZDcVCC/UXX0UgdIJPeMnMOJUZjP1D8RJawaNn7D9IcMvnEKBkSKBHQuJpACmepQ==",
+  "dgSpecHash": "WsUdNN98JoT77bGDQ8OuZoDDn3tVoPkYZyPuD41HqtUwmXOdTaB0fINorkfYfBcxfNYKZroD/1ujOakAus21yQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\robert.mocanu\\Desktop\\BankAccount\\AccountTransfer.Grains\\AccountTransfer.Grains.csproj",
+  "projectFilePath": "C:\\Users\\robert.mocanu\\Desktop\\bankTransfer\\BankAccountBE\\AccountTransfer.Grains\\AccountTransfer.Grains.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\robert.mocanu\\.nuget\\packages\\microsoft.aspnetcore.connections.abstractions\\6.0.0\\microsoft.aspnetcore.connections.abstractions.6.0.0.nupkg.sha512",
     "C:\\Users\\robert.mocanu\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\6.0.0\\microsoft.bcl.asyncinterfaces.6.0.0.nupkg.sha512",

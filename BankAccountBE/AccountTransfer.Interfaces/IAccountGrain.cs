@@ -5,6 +5,7 @@ namespace AccountTransfer.Interfaces;
 
 public interface IAccountGrain : IGrainWithStringKey
 {
+
     [Transaction(TransactionOption.Join)]
     Task Withdraw(uint amount);
 
