@@ -37,9 +37,26 @@ namespace WebAPI
             {
                 app.UseDeveloperExceptionPage();
             }
-            
-            app.UseDefaultFiles();
-            app.UseStaticFiles();
+
+            //app.UseDefaultFiles();
+            //app.UseStaticFiles();
+            app.UseRouting();
+
+            // global cors policy
+            app.UseCors(builder => builder
+                .AllowAnyOrigin()
+                .AllowAnyMethod()
+                .AllowAnyHeader());
+
+            app.UseRouting();
+
+            app.UseAuthentication();
+            app.UseAuthorization();
+
+            app.UseEndpoints(endpoints =>
+            {
+                endpoints.MapControllers();
+            });
         }
     }
 }

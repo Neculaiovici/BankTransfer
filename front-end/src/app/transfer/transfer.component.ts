@@ -1,6 +1,8 @@
 import { HttpResponseBase } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { switchMap } from 'rxjs';
+import { Accounts } from '../accounts';
 import { Account } from '../models/account.interface';
 import { ServicesService } from '../services.service';
 
@@ -45,12 +47,20 @@ export class TransferComponent implements OnInit {
   }
 
   submit(){
-    const fromEmail = this.transferFC.value.fromEmail
+    const fromEmail = 'robert@gmail.com' //this.transferFC.value.fromEmail
     const toEmail = this.transferFC.value.toEmail
     const amount = this.transferFC.value.amount
-    return this.services.trensferMoney(fromEmail, toEmail, amount).subscribe(
-      this.handleError
-    )
+    return this.services.getAccount().subscribe((data: Account) => {
+      if(data.email = fromEmail){
+        this.services.trensferMoney(fromEmail, toEmail, amount).subscribe(this.handleError)
+      }else{
+        console.log("bad!!!!")
+      }
+    })
+    
+    // this.services.trensferMoney(fromEmail, toEmail, amount).subscribe(
+    //   this.handleError
+    // )
   }
 
   private handleError(error: HttpResponseBase | Error): void {

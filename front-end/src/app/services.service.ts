@@ -9,7 +9,7 @@ import { Transfer } from './models/transfer.interface';
 })
 export class ServicesService {
  //url api
-  private url = 'https://localhost:7083/api/client'
+  private url = 'http://localhost:4200/api/client'
   constructor(private http: HttpClient) { }
 
   //get accounts
@@ -23,12 +23,19 @@ export class ServicesService {
 
 
   //transfer money
+  // terbuia sa faca legatura intre conturi dupa care sa faca modificarile pe amount !!!!!!!!!!!
   trensferMoney(fromEmail:string, toEmail:string, amount:string):Observable<any>{
-    const body = {fromEmail: fromEmail, toEmail: toEmail, amount: amount}
+    const body = {fromEmail: 'robert@gmail.com', toEmail: 'n@gmail.com', amount: 2}
     const headers = new HttpHeaders().set('Content-Type', 'application/json; charset=utf-8');
-    return this.http.post(`${this.url}/transfer`, body, {headers: headers, observe: 'response'})
+    return this.http.post(`${this.url}/transfer`, body, {headers: headers, observe: 'response', reportProgress: true})
       .pipe(catchError(this.handleError));
   }
+  // trensferMoney(fromEmail:string, toEmail:string, amount:string):Observable<any>{
+  //   const body = {fromEmail: fromEmail, toEmail: toEmail, amount: amount}
+  //   const headers = new HttpHeaders().set('Content-Type', 'application/json; charset=utf-8');
+  //   return this.http.post(`${this.url}/transfer`, body, {headers: headers, observe: 'response', reportProgress: true})
+  //     .pipe(catchError(this.handleError));
+  // }
 
 
   //error
