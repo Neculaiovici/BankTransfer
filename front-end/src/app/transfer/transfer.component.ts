@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { asNativeElements, Component, ElementRef, Input, OnInit, ViewChild } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { Transfer } from '../models/transfer.interface';
 import { ServicesService } from '../services.service';
@@ -9,7 +9,7 @@ import { ServicesService } from '../services.service';
   styleUrls: ['./transfer.component.scss']
 })
 export class TransferComponent implements OnInit {
-
+  
   form: FormGroup = this.fb.group({
     'fromEmail': ['', Validators.compose([
       Validators.minLength(5),
@@ -32,15 +32,24 @@ export class TransferComponent implements OnInit {
     ])]
   })
 
-  
+  transfer = new Transfer()
+
   constructor(private fb: FormBuilder,private services: ServicesService) { }
 
   ngOnInit(): void {
+    
   }
-  transfer: Transfer | any;
+
+  //refreshList
+  refreshAccountList(){
+    
+  }
+
+  //transfer money
   TransferMoney(){
-    this.services.trensferMoney(this.transfer).subscribe( data => {console.log(data)}
-    )
+    this.services.trensferMoney(this.transfer).subscribe( data => {
+      console.log(data)
+    })
   }
 
 }

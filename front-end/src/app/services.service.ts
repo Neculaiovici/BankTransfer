@@ -23,11 +23,16 @@ export class ServicesService {
 
 
   //transfer money
-  trensferMoney(transfer: Transfer):Observable<Transfer>{
-    const body  = JSON.stringify(transfer)
-    const headers = new HttpHeaders().set('Content-Type', 'application/json; charset=utf-8')
-    return this.http.post<Transfer>(`${this.url}/transfer`, body, {headers: headers})
-      .pipe(catchError(this.handleError))
+  trensferMoney(transfer: Transfer):Observable<any>{
+    const body  = JSON.stringify(transfer);
+    const headers = new HttpHeaders().set('Content-Type', 'application/json; charset=utf-8');
+    // let formData = new FormData();
+    // formData.append('fromEmail', transfer.FromEmail);
+    // formData.append('toEmail', transfer.ToEmail);
+    // formData.append('amount', transfer.Amount)
+
+    return this.http.post(`${this.url}/transfer`, body, {headers: headers, observe: 'response'})
+      .pipe(catchError(this.handleError));
   }
 
 
