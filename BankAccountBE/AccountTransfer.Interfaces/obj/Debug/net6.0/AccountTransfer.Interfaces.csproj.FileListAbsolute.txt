@@ -40,3 +40,17 @@ C:\Users\robert.mocanu\Desktop\bankTransfer\BankAccountBE\AccountTransfer.Interf
 C:\Users\robert.mocanu\Desktop\bankTransfer\BankAccountBE\AccountTransfer.Interfaces\obj\Debug\net6.0\refint\AccountTransfer.Interfaces.dll
 C:\Users\robert.mocanu\Desktop\bankTransfer\BankAccountBE\AccountTransfer.Interfaces\obj\Debug\net6.0\AccountTransfer.Interfaces.pdb
 C:\Users\robert.mocanu\Desktop\bankTransfer\BankAccountBE\AccountTransfer.Interfaces\obj\Debug\net6.0\ref\AccountTransfer.Interfaces.dll
+D:\Dev\bankTransfer\BankAccountBE\AccountTransfer.Interfaces\bin\Debug\net6.0\AccountTransfer.Interfaces.deps.json
+D:\Dev\bankTransfer\BankAccountBE\AccountTransfer.Interfaces\bin\Debug\net6.0\AccountTransfer.Interfaces.dll
+D:\Dev\bankTransfer\BankAccountBE\AccountTransfer.Interfaces\bin\Debug\net6.0\AccountTransfer.Interfaces.pdb
+D:\Dev\bankTransfer\BankAccountBE\AccountTransfer.Interfaces\obj\Debug\net6.0\AccountTransfer.Interfaces.csproj.AssemblyReference.cache
+D:\Dev\bankTransfer\BankAccountBE\AccountTransfer.Interfaces\obj\Debug\net6.0\AccountTransfer.Interfaces.orleans.g.args.txt
+D:\Dev\bankTransfer\BankAccountBE\AccountTransfer.Interfaces\obj\Debug\net6.0\AccountTransfer.Interfaces.orleans.g.cs
+D:\Dev\bankTransfer\BankAccountBE\AccountTransfer.Interfaces\obj\Debug\net6.0\AccountTransfer.Interfaces.GeneratedMSBuildEditorConfig.editorconfig
+D:\Dev\bankTransfer\BankAccountBE\AccountTransfer.Interfaces\obj\Debug\net6.0\AccountTransfer.Interfaces.AssemblyInfoInputs.cache
+D:\Dev\bankTransfer\BankAccountBE\AccountTransfer.Interfaces\obj\Debug\net6.0\AccountTransfer.Interfaces.AssemblyInfo.cs
+D:\Dev\bankTransfer\BankAccountBE\AccountTransfer.Interfaces\obj\Debug\net6.0\AccountTransfer.Interfaces.csproj.CoreCompileInputs.cache
+D:\Dev\bankTransfer\BankAccountBE\AccountTransfer.Interfaces\obj\Debug\net6.0\AccountTransfer.Interfaces.dll
+D:\Dev\bankTransfer\BankAccountBE\AccountTransfer.Interfaces\obj\Debug\net6.0\refint\AccountTransfer.Interfaces.dll
+D:\Dev\bankTransfer\BankAccountBE\AccountTransfer.Interfaces\obj\Debug\net6.0\AccountTransfer.Interfaces.pdb
+D:\Dev\bankTransfer\BankAccountBE\AccountTransfer.Interfaces\obj\Debug\net6.0\ref\AccountTransfer.Interfaces.dll

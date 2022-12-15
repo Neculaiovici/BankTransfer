@@ -39,6 +39,11 @@ namespace AccountTransfer.Interfaces
                             return await casted.GetBalance();
                         case (int)0x74D34315:
                             return await casted.GetAccount();
+                        case unchecked((int)0xCD7C21E7):
+                            return await casted.GetAllIds();
+                        case (int)0x2BFEE8BD:
+                            await casted.Init((string)arguments[0], (string)arguments[1], (uint)arguments[2]);
+                            return null;
                         default:
                             ThrowMethodNotImplemented(interfaceId, methodId);
                             return null;
@@ -93,6 +98,10 @@ namespace AccountTransfer.Interfaces
                             return "GetBalance";
                         case (int)0x74D34315:
                             return "GetAccount";
+                        case unchecked((int)0xCD7C21E7):
+                            return "GetAllIds";
+                        case (int)0x2BFEE8BD:
+                            return "Init";
                         default:
                             ThrowMethodNotImplemented(interfaceId, methodId);
                             return null;
@@ -126,6 +135,16 @@ namespace AccountTransfer.Interfaces
         global::System.Threading.Tasks.Task<global::AccountTransfer.Interfaces.States.BankAccount> global::AccountTransfer.Interfaces.IAccountGrain.GetAccount()
         {
             return base.InvokeMethodAsync<global::AccountTransfer.Interfaces.States.BankAccount>((int)0x74D34315, null, options: global::Orleans.CodeGeneration.InvokeMethodOptions.TransactionCreateOrJoin);
+        }
+
+        global::System.Threading.Tasks.Task<global::System.Collections.Generic.List<global::AccountTransfer.Interfaces.States.BankAccount>> global::AccountTransfer.Interfaces.IAccountGrain.GetAllIds()
+        {
+            return base.InvokeMethodAsync<global::System.Collections.Generic.List<global::AccountTransfer.Interfaces.States.BankAccount>>(unchecked((int)0xCD7C21E7), null);
+        }
+
+        global::System.Threading.Tasks.Task global::AccountTransfer.Interfaces.IAccountGrain.Init(string fullName0, string Exp1, uint Balance2)
+        {
+            return base.InvokeMethodAsync<object>((int)0x2BFEE8BD, new object[]{fullName0, Exp1, Balance2}, options: global::Orleans.CodeGeneration.InvokeMethodOptions.TransactionCreateOrJoin);
         }
     }
 
@@ -234,6 +253,8 @@ namespace AccountTransfer.Interfaces.States
             context.RecordCopy(original, result);
             result.Balance = input.Balance;
             result.Email = input.Email;
+            result.Exp = input.Exp;
+            result.FUllName = input.FUllName;
             return result;
         }
 
@@ -243,6 +264,8 @@ namespace AccountTransfer.Interfaces.States
             global::AccountTransfer.Interfaces.States.BankAccount input = (global::AccountTransfer.Interfaces.States.BankAccount)untypedInput;
             context.SerializeInner(input.Balance, typeof(uint));
             context.SerializeInner(input.Email, typeof(string));
+            context.SerializeInner(input.Exp, typeof(string));
+            context.SerializeInner(input.FUllName, typeof(string));
         }
 
         [global::Orleans.CodeGeneration.DeserializerMethodAttribute]
@@ -252,6 +275,8 @@ namespace AccountTransfer.Interfaces.States
             context.RecordObject(result);
             result.Balance = (uint)context.DeserializeInner(typeof(uint));
             result.Email = (string)context.DeserializeInner(typeof(string));
+            result.Exp = (string)context.DeserializeInner(typeof(string));
+            result.FUllName = (string)context.DeserializeInner(typeof(string));
             return (global::AccountTransfer.Interfaces.States.BankAccount)result;
         }
     }
@@ -314,6 +339,7 @@ namespace OrleansGeneratedCode
             feature.AddKnownType("System.Threading.Tasks.Task", "Task");
             feature.AddKnownType("System.Threading.Tasks.Task`1", "Task`1'1");
             feature.AddKnownType("AccountTransfer.Interfaces.States.BankAccount,AccountTransfer.Interfaces", "AccountTransfer.Interfaces.States.BankAccount");
+            feature.AddKnownType("System.Collections.Generic.List`1", "List`1'1");
             feature.AddKnownType("AccountTransfer.Interfaces.IAtmGrain,AccountTransfer.Interfaces", "AccountTransfer.Interfaces.IAtmGrain");
             feature.AddKnownType("AccountTransfer.Interfaces.States.BankAccountState,AccountTransfer.Interfaces", "AccountTransfer.Interfaces.States.BankAccountState");
             feature.AddKnownType("Microsoft.CSharp.RuntimeBinder.CSharpArgumentInfo,Microsoft.CSharp", "Microsoft.CSharp.RuntimeBinder.CSharpArgumentInfo");
@@ -643,7 +669,6 @@ namespace OrleansGeneratedCode
             feature.AddKnownType("System.Collections.Generic.LinkedListNode`1", "LinkedListNode`1'1");
             feature.AddKnownType("System.Collections.Generic.LinkedList`1", "LinkedList`1'1");
             feature.AddKnownType("System.Collections.Generic.LinkedList`1+Enumerator", "LinkedList`1'1.Enumerator'1");
-            feature.AddKnownType("System.Collections.Generic.List`1", "List`1'1");
             feature.AddKnownType("System.Collections.Generic.List`1+Enumerator", "List`1'1.Enumerator'1");
             feature.AddKnownType("System.Collections.Generic.PriorityQueue`2", "PriorityQueue`2'2");
             feature.AddKnownType("System.Collections.Generic.PriorityQueue`2+UnorderedItemsCollection", "PriorityQueue`2'2.UnorderedItemsCollection'2");

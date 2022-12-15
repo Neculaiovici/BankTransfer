@@ -2,10 +2,8 @@ using AccountTransfer.Interfaces;
 using AccountTransfer.Interfaces.States;
 using Orleans;
 using Orleans.Transactions.Abstractions;
-using System.ComponentModel.DataAnnotations;
 
 namespace AccountTransfer.Grains;
-
 
 [Serializable]
 public record class Balance
@@ -16,10 +14,24 @@ public record class Balance
 public class AccountGrain : Grain, IAccountGrain
 {
     private readonly ITransactionalState<Balance> _balance;
+    private readonly IClusterClient _client;
+    private string FullName;
+    private string Exp = "6/25";
 
-    public AccountGrain(
-        [TransactionalState("balance")] ITransactionalState<Balance> balance) =>
+    public AccountGrain([TransactionalState("balance")] ITransactionalState<Balance> balance, IClusterClient client)
+    {
         _balance = balance ?? throw new ArgumentNullException(nameof(balance));
+        FullName = "User " + MemoryCache.Grains.Count();
+        _client = client;
+    }
+
+    public override async Task OnActivateAsync()
+    {
+        await base.OnActivateAsync();
+
+        string id = this.GetPrimaryKeyString();
+        MemoryCache.Grains.Add(this.GetPrimaryKeyString());
+    }
 
     public Task Deposit(uint amount) =>
         _balance.PerformUpdate(
@@ -39,12 +51,35 @@ public class AccountGrain : Grain, IAccountGrain
             balance.Value -= amount;
         });
 
-    public async Task<BankAccount> GetAccount() => new BankAccount
+    public async Task<BankAccount> GetAccount()
     {
-        Email = this.GetPrimaryKeyString(),
-        Balance = await GetBalance()
-    };
+        return new BankAccount
+        {
+            Email = this.GetPrimaryKeyString(),
+            Balance = await GetBalance(),
+            FUllName = this.FullName,
+            Exp = this.Exp
+        };
+    }
 
-    public Task<uint> GetBalance() =>
-        _balance.PerformRead(balance => balance.Value);
+    public async Task<List<BankAccount>> GetAllIds()
+    {
+        List<BankAccount> res = new List<BankAccount>();
+        foreach (var email in MemoryCache.Grains)
+        {
+            var _grain = _client.GetGrain<IAccountGrain>(email);
+            BankAccount _grainResp = await _grain.GetAccount();
+            res.Add(_grainResp);
+        }
+        return res;
+    }
+
+    public async Task Init(string _FullName, string _Exp, uint _Balance)
+    {
+        FullName = _FullName?.Length > 0 ? _FullName : FullName;
+        Exp = _Exp?.Length > 0 ? _Exp : Exp;
+        _balance.PerformUpdate(balance => balance.Value = _Balance);
+    }
+
+    public Task<uint> GetBalance() => _balance.PerformRead(balance => balance.Value);
 }

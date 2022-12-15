@@ -28,6 +28,7 @@ namespace WebAPI
 
             client.Connect().Wait();
 
+
             return client;
         }
 

@@ -1,44 +1,160 @@
 LogLevel:Warning
-ProjectPath:C:\Users\robert.mocanu\Desktop\bankTransfer\BankAccountBE\AccountTransfer.Grains\AccountTransfer.Grains.csproj
+ProjectPath:D:\Dev\bankTransfer\BankAccountBE\AccountTransfer.Grains\AccountTransfer.Grains.csproj
 ProjectGuid:
 AssemblyName:AccountTransfer.Grains
 OutputType:Library
-TargetPath:C:\Users\robert.mocanu\Desktop\bankTransfer\BankAccountBE\AccountTransfer.Grains\bin\Debug\net6.0\AccountTransfer.Grains.dll
-CodeGenOutputFile:C:\Users\robert.mocanu\Desktop\bankTransfer\BankAccountBE\AccountTransfer.Grains\obj\Debug\net6.0\AccountTransfer.Grains.orleans.g.cs
-Compile:C:\Users\robert.mocanu\Desktop\bankTransfer\BankAccountBE\AccountTransfer.Grains\AccountGrain.cs
-Compile:C:\Users\robert.mocanu\Desktop\bankTransfer\BankAccountBE\AccountTransfer.Grains\AtmGrain.cs
-Compile:C:\Users\robert.mocanu\Desktop\bankTransfer\BankAccountBE\AccountTransfer.Grains\obj\Debug\net6.0\AccountTransfer.Grains.GlobalUsings.g.cs
-Reference:C:\Users\robert.mocanu\Desktop\bankTransfer\BankAccountBE\AccountTransfer.Interfaces\bin\Debug\net6.0\AccountTransfer.Interfaces.dll
-Reference:C:\Users\robert.mocanu\.nuget\packages\microsoft.aspnetcore.connections.abstractions\6.0.0\lib\net6.0\Microsoft.AspNetCore.Connections.Abstractions.dll
-Reference:C:\Users\robert.mocanu\.nuget\packages\microsoft.bcl.asyncinterfaces\6.0.0\lib\netstandard2.1\Microsoft.Bcl.AsyncInterfaces.dll
+TargetPath:D:\Dev\bankTransfer\BankAccountBE\AccountTransfer.Grains\bin\Debug\net6.0\AccountTransfer.Grains.dll
+CodeGenOutputFile:D:\Dev\bankTransfer\BankAccountBE\AccountTransfer.Grains\obj\Debug\net6.0\AccountTransfer.Grains.orleans.g.cs
+Compile:D:\Dev\bankTransfer\BankAccountBE\AccountTransfer.Grains\AccountGrain.cs
+Compile:D:\Dev\bankTransfer\BankAccountBE\AccountTransfer.Grains\AtmGrain.cs
+Compile:D:\Dev\bankTransfer\BankAccountBE\AccountTransfer.Grains\MemoryCache.cs
+Compile:D:\Dev\bankTransfer\BankAccountBE\AccountTransfer.Grains\obj\Debug\net6.0\AccountTransfer.Grains.GlobalUsings.g.cs
+Reference:D:\Dev\bankTransfer\BankAccountBE\AccountTransfer.Interfaces\bin\Debug\net6.0\AccountTransfer.Interfaces.dll
+Reference:C:\Program Files\dotnet\packs\Microsoft.AspNetCore.App.Ref\6.0.11\ref\net6.0\Microsoft.AspNetCore.Antiforgery.dll
+Reference:C:\Program Files\dotnet\packs\Microsoft.AspNetCore.App.Ref\6.0.11\ref\net6.0\Microsoft.AspNetCore.Authentication.Abstractions.dll
+Reference:C:\Program Files\dotnet\packs\Microsoft.AspNetCore.App.Ref\6.0.11\ref\net6.0\Microsoft.AspNetCore.Authentication.Cookies.dll
+Reference:C:\Program Files\dotnet\packs\Microsoft.AspNetCore.App.Ref\6.0.11\ref\net6.0\Microsoft.AspNetCore.Authentication.Core.dll
+Reference:C:\Program Files\dotnet\packs\Microsoft.AspNetCore.App.Ref\6.0.11\ref\net6.0\Microsoft.AspNetCore.Authentication.dll
+Reference:C:\Program Files\dotnet\packs\Microsoft.AspNetCore.App.Ref\6.0.11\ref\net6.0\Microsoft.AspNetCore.Authentication.OAuth.dll
+Reference:C:\Program Files\dotnet\packs\Microsoft.AspNetCore.App.Ref\6.0.11\ref\net6.0\Microsoft.AspNetCore.Authorization.dll
+Reference:C:\Program Files\dotnet\packs\Microsoft.AspNetCore.App.Ref\6.0.11\ref\net6.0\Microsoft.AspNetCore.Authorization.Policy.dll
+Reference:C:\Program Files\dotnet\packs\Microsoft.AspNetCore.App.Ref\6.0.11\ref\net6.0\Microsoft.AspNetCore.Components.Authorization.dll
+Reference:C:\Program Files\dotnet\packs\Microsoft.AspNetCore.App.Ref\6.0.11\ref\net6.0\Microsoft.AspNetCore.Components.dll
+Reference:C:\Program Files\dotnet\packs\Microsoft.AspNetCore.App.Ref\6.0.11\ref\net6.0\Microsoft.AspNetCore.Components.Forms.dll
+Reference:C:\Program Files\dotnet\packs\Microsoft.AspNetCore.App.Ref\6.0.11\ref\net6.0\Microsoft.AspNetCore.Components.Server.dll
+Reference:C:\Program Files\dotnet\packs\Microsoft.AspNetCore.App.Ref\6.0.11\ref\net6.0\Microsoft.AspNetCore.Components.Web.dll
+Reference:C:\Program Files\dotnet\packs\Microsoft.AspNetCore.App.Ref\6.0.11\ref\net6.0\Microsoft.AspNetCore.Connections.Abstractions.dll
+Reference:C:\Program Files\dotnet\packs\Microsoft.AspNetCore.App.Ref\6.0.11\ref\net6.0\Microsoft.AspNetCore.CookiePolicy.dll
+Reference:C:\Program Files\dotnet\packs\Microsoft.AspNetCore.App.Ref\6.0.11\ref\net6.0\Microsoft.AspNetCore.Cors.dll
+Reference:C:\Program Files\dotnet\packs\Microsoft.AspNetCore.App.Ref\6.0.11\ref\net6.0\Microsoft.AspNetCore.Cryptography.Internal.dll
+Reference:C:\Program Files\dotnet\packs\Microsoft.AspNetCore.App.Ref\6.0.11\ref\net6.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+Reference:C:\Program Files\dotnet\packs\Microsoft.AspNetCore.App.Ref\6.0.11\ref\net6.0\Microsoft.AspNetCore.DataProtection.Abstractions.dll
+Reference:C:\Program Files\dotnet\packs\Microsoft.AspNetCore.App.Ref\6.0.11\ref\net6.0\Microsoft.AspNetCore.DataProtection.dll
+Reference:C:\Program Files\dotnet\packs\Microsoft.AspNetCore.App.Ref\6.0.11\ref\net6.0\Microsoft.AspNetCore.DataProtection.Extensions.dll
+Reference:C:\Program Files\dotnet\packs\Microsoft.AspNetCore.App.Ref\6.0.11\ref\net6.0\Microsoft.AspNetCore.Diagnostics.Abstractions.dll
+Reference:C:\Program Files\dotnet\packs\Microsoft.AspNetCore.App.Ref\6.0.11\ref\net6.0\Microsoft.AspNetCore.Diagnostics.dll
+Reference:C:\Program Files\dotnet\packs\Microsoft.AspNetCore.App.Ref\6.0.11\ref\net6.0\Microsoft.AspNetCore.Diagnostics.HealthChecks.dll
+Reference:C:\Program Files\dotnet\packs\Microsoft.AspNetCore.App.Ref\6.0.11\ref\net6.0\Microsoft.AspNetCore.dll
+Reference:C:\Program Files\dotnet\packs\Microsoft.AspNetCore.App.Ref\6.0.11\ref\net6.0\Microsoft.AspNetCore.HostFiltering.dll
+Reference:C:\Program Files\dotnet\packs\Microsoft.AspNetCore.App.Ref\6.0.11\ref\net6.0\Microsoft.AspNetCore.Hosting.Abstractions.dll
+Reference:C:\Program Files\dotnet\packs\Microsoft.AspNetCore.App.Ref\6.0.11\ref\net6.0\Microsoft.AspNetCore.Hosting.dll
+Reference:C:\Program Files\dotnet\packs\Microsoft.AspNetCore.App.Ref\6.0.11\ref\net6.0\Microsoft.AspNetCore.Hosting.Server.Abstractions.dll
+Reference:C:\Program Files\dotnet\packs\Microsoft.AspNetCore.App.Ref\6.0.11\ref\net6.0\Microsoft.AspNetCore.Html.Abstractions.dll
+Reference:C:\Program Files\dotnet\packs\Microsoft.AspNetCore.App.Ref\6.0.11\ref\net6.0\Microsoft.AspNetCore.Http.Abstractions.dll
+Reference:C:\Program Files\dotnet\packs\Microsoft.AspNetCore.App.Ref\6.0.11\ref\net6.0\Microsoft.AspNetCore.Http.Connections.Common.dll
+Reference:C:\Program Files\dotnet\packs\Microsoft.AspNetCore.App.Ref\6.0.11\ref\net6.0\Microsoft.AspNetCore.Http.Connections.dll
+Reference:C:\Program Files\dotnet\packs\Microsoft.AspNetCore.App.Ref\6.0.11\ref\net6.0\Microsoft.AspNetCore.Http.dll
+Reference:C:\Program Files\dotnet\packs\Microsoft.AspNetCore.App.Ref\6.0.11\ref\net6.0\Microsoft.AspNetCore.Http.Extensions.dll
+Reference:C:\Program Files\dotnet\packs\Microsoft.AspNetCore.App.Ref\6.0.11\ref\net6.0\Microsoft.AspNetCore.Http.Features.dll
+Reference:C:\Program Files\dotnet\packs\Microsoft.AspNetCore.App.Ref\6.0.11\ref\net6.0\Microsoft.AspNetCore.Http.Results.dll
+Reference:C:\Program Files\dotnet\packs\Microsoft.AspNetCore.App.Ref\6.0.11\ref\net6.0\Microsoft.AspNetCore.HttpLogging.dll
+Reference:C:\Program Files\dotnet\packs\Microsoft.AspNetCore.App.Ref\6.0.11\ref\net6.0\Microsoft.AspNetCore.HttpOverrides.dll
+Reference:C:\Program Files\dotnet\packs\Microsoft.AspNetCore.App.Ref\6.0.11\ref\net6.0\Microsoft.AspNetCore.HttpsPolicy.dll
+Reference:C:\Program Files\dotnet\packs\Microsoft.AspNetCore.App.Ref\6.0.11\ref\net6.0\Microsoft.AspNetCore.Identity.dll
+Reference:C:\Program Files\dotnet\packs\Microsoft.AspNetCore.App.Ref\6.0.11\ref\net6.0\Microsoft.AspNetCore.Localization.dll
+Reference:C:\Program Files\dotnet\packs\Microsoft.AspNetCore.App.Ref\6.0.11\ref\net6.0\Microsoft.AspNetCore.Localization.Routing.dll
+Reference:C:\Program Files\dotnet\packs\Microsoft.AspNetCore.App.Ref\6.0.11\ref\net6.0\Microsoft.AspNetCore.Metadata.dll
+Reference:C:\Program Files\dotnet\packs\Microsoft.AspNetCore.App.Ref\6.0.11\ref\net6.0\Microsoft.AspNetCore.Mvc.Abstractions.dll
+Reference:C:\Program Files\dotnet\packs\Microsoft.AspNetCore.App.Ref\6.0.11\ref\net6.0\Microsoft.AspNetCore.Mvc.ApiExplorer.dll
+Reference:C:\Program Files\dotnet\packs\Microsoft.AspNetCore.App.Ref\6.0.11\ref\net6.0\Microsoft.AspNetCore.Mvc.Core.dll
+Reference:C:\Program Files\dotnet\packs\Microsoft.AspNetCore.App.Ref\6.0.11\ref\net6.0\Microsoft.AspNetCore.Mvc.Cors.dll
+Reference:C:\Program Files\dotnet\packs\Microsoft.AspNetCore.App.Ref\6.0.11\ref\net6.0\Microsoft.AspNetCore.Mvc.DataAnnotations.dll
+Reference:C:\Program Files\dotnet\packs\Microsoft.AspNetCore.App.Ref\6.0.11\ref\net6.0\Microsoft.AspNetCore.Mvc.dll
+Reference:C:\Program Files\dotnet\packs\Microsoft.AspNetCore.App.Ref\6.0.11\ref\net6.0\Microsoft.AspNetCore.Mvc.Formatters.Json.dll
+Reference:C:\Program Files\dotnet\packs\Microsoft.AspNetCore.App.Ref\6.0.11\ref\net6.0\Microsoft.AspNetCore.Mvc.Formatters.Xml.dll
+Reference:C:\Program Files\dotnet\packs\Microsoft.AspNetCore.App.Ref\6.0.11\ref\net6.0\Microsoft.AspNetCore.Mvc.Localization.dll
+Reference:C:\Program Files\dotnet\packs\Microsoft.AspNetCore.App.Ref\6.0.11\ref\net6.0\Microsoft.AspNetCore.Mvc.Razor.dll
+Reference:C:\Program Files\dotnet\packs\Microsoft.AspNetCore.App.Ref\6.0.11\ref\net6.0\Microsoft.AspNetCore.Mvc.RazorPages.dll
+Reference:C:\Program Files\dotnet\packs\Microsoft.AspNetCore.App.Ref\6.0.11\ref\net6.0\Microsoft.AspNetCore.Mvc.TagHelpers.dll
+Reference:C:\Program Files\dotnet\packs\Microsoft.AspNetCore.App.Ref\6.0.11\ref\net6.0\Microsoft.AspNetCore.Mvc.ViewFeatures.dll
+Reference:C:\Program Files\dotnet\packs\Microsoft.AspNetCore.App.Ref\6.0.11\ref\net6.0\Microsoft.AspNetCore.Razor.dll
+Reference:C:\Program Files\dotnet\packs\Microsoft.AspNetCore.App.Ref\6.0.11\ref\net6.0\Microsoft.AspNetCore.Razor.Runtime.dll
+Reference:C:\Program Files\dotnet\packs\Microsoft.AspNetCore.App.Ref\6.0.11\ref\net6.0\Microsoft.AspNetCore.ResponseCaching.Abstractions.dll
+Reference:C:\Program Files\dotnet\packs\Microsoft.AspNetCore.App.Ref\6.0.11\ref\net6.0\Microsoft.AspNetCore.ResponseCaching.dll
+Reference:C:\Program Files\dotnet\packs\Microsoft.AspNetCore.App.Ref\6.0.11\ref\net6.0\Microsoft.AspNetCore.ResponseCompression.dll
+Reference:C:\Program Files\dotnet\packs\Microsoft.AspNetCore.App.Ref\6.0.11\ref\net6.0\Microsoft.AspNetCore.Rewrite.dll
+Reference:C:\Program Files\dotnet\packs\Microsoft.AspNetCore.App.Ref\6.0.11\ref\net6.0\Microsoft.AspNetCore.Routing.Abstractions.dll
+Reference:C:\Program Files\dotnet\packs\Microsoft.AspNetCore.App.Ref\6.0.11\ref\net6.0\Microsoft.AspNetCore.Routing.dll
+Reference:C:\Program Files\dotnet\packs\Microsoft.AspNetCore.App.Ref\6.0.11\ref\net6.0\Microsoft.AspNetCore.Server.HttpSys.dll
+Reference:C:\Program Files\dotnet\packs\Microsoft.AspNetCore.App.Ref\6.0.11\ref\net6.0\Microsoft.AspNetCore.Server.IIS.dll
+Reference:C:\Program Files\dotnet\packs\Microsoft.AspNetCore.App.Ref\6.0.11\ref\net6.0\Microsoft.AspNetCore.Server.IISIntegration.dll
+Reference:C:\Program Files\dotnet\packs\Microsoft.AspNetCore.App.Ref\6.0.11\ref\net6.0\Microsoft.AspNetCore.Server.Kestrel.Core.dll
+Reference:C:\Program Files\dotnet\packs\Microsoft.AspNetCore.App.Ref\6.0.11\ref\net6.0\Microsoft.AspNetCore.Server.Kestrel.dll
+Reference:C:\Program Files\dotnet\packs\Microsoft.AspNetCore.App.Ref\6.0.11\ref\net6.0\Microsoft.AspNetCore.Server.Kestrel.Transport.Quic.dll
+Reference:C:\Program Files\dotnet\packs\Microsoft.AspNetCore.App.Ref\6.0.11\ref\net6.0\Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.dll
+Reference:C:\Program Files\dotnet\packs\Microsoft.AspNetCore.App.Ref\6.0.11\ref\net6.0\Microsoft.AspNetCore.Session.dll
+Reference:C:\Program Files\dotnet\packs\Microsoft.AspNetCore.App.Ref\6.0.11\ref\net6.0\Microsoft.AspNetCore.SignalR.Common.dll
+Reference:C:\Program Files\dotnet\packs\Microsoft.AspNetCore.App.Ref\6.0.11\ref\net6.0\Microsoft.AspNetCore.SignalR.Core.dll
+Reference:C:\Program Files\dotnet\packs\Microsoft.AspNetCore.App.Ref\6.0.11\ref\net6.0\Microsoft.AspNetCore.SignalR.dll
+Reference:C:\Program Files\dotnet\packs\Microsoft.AspNetCore.App.Ref\6.0.11\ref\net6.0\Microsoft.AspNetCore.SignalR.Protocols.Json.dll
+Reference:C:\Program Files\dotnet\packs\Microsoft.AspNetCore.App.Ref\6.0.11\ref\net6.0\Microsoft.AspNetCore.StaticFiles.dll
+Reference:C:\Program Files\dotnet\packs\Microsoft.AspNetCore.App.Ref\6.0.11\ref\net6.0\Microsoft.AspNetCore.WebSockets.dll
+Reference:C:\Program Files\dotnet\packs\Microsoft.AspNetCore.App.Ref\6.0.11\ref\net6.0\Microsoft.AspNetCore.WebUtilities.dll
+Reference:C:\Users\ioan.manolea\.nuget\packages\microsoft.bcl.asyncinterfaces\6.0.0\lib\netstandard2.1\Microsoft.Bcl.AsyncInterfaces.dll
 Reference:C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\6.0.11\ref\net6.0\Microsoft.CSharp.dll
-Reference:C:\Users\robert.mocanu\.nuget\packages\microsoft.extensions.configuration.abstractions\6.0.0\lib\netstandard2.0\Microsoft.Extensions.Configuration.Abstractions.dll
-Reference:C:\Users\robert.mocanu\.nuget\packages\microsoft.extensions.configuration.binder\6.0.0\lib\netstandard2.0\Microsoft.Extensions.Configuration.Binder.dll
-Reference:C:\Users\robert.mocanu\.nuget\packages\microsoft.extensions.configuration\6.0.0\lib\netstandard2.0\Microsoft.Extensions.Configuration.dll
-Reference:C:\Users\robert.mocanu\.nuget\packages\microsoft.extensions.dependencyinjection.abstractions\6.0.0\lib\net6.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
-Reference:C:\Users\robert.mocanu\.nuget\packages\microsoft.extensions.dependencyinjection\6.0.0\lib\net6.0\Microsoft.Extensions.DependencyInjection.dll
-Reference:C:\Users\robert.mocanu\.nuget\packages\microsoft.extensions.dependencymodel\6.0.0\lib\netstandard2.0\Microsoft.Extensions.DependencyModel.dll
-Reference:C:\Users\robert.mocanu\.nuget\packages\microsoft.extensions.features\6.0.0\lib\net6.0\Microsoft.Extensions.Features.dll
-Reference:C:\Users\robert.mocanu\.nuget\packages\microsoft.extensions.fileproviders.abstractions\6.0.0\lib\net6.0\Microsoft.Extensions.FileProviders.Abstractions.dll
-Reference:C:\Users\robert.mocanu\.nuget\packages\microsoft.extensions.hosting.abstractions\6.0.0\lib\netstandard2.1\Microsoft.Extensions.Hosting.Abstractions.dll
-Reference:C:\Users\robert.mocanu\.nuget\packages\microsoft.extensions.logging.abstractions\6.0.0\lib\net6.0\Microsoft.Extensions.Logging.Abstractions.dll
-Reference:C:\Users\robert.mocanu\.nuget\packages\microsoft.extensions.logging\6.0.0\lib\netstandard2.1\Microsoft.Extensions.Logging.dll
-Reference:C:\Users\robert.mocanu\.nuget\packages\microsoft.extensions.objectpool\6.0.0\lib\net6.0\Microsoft.Extensions.ObjectPool.dll
-Reference:C:\Users\robert.mocanu\.nuget\packages\microsoft.extensions.options.configurationextensions\6.0.0\lib\netstandard2.0\Microsoft.Extensions.Options.ConfigurationExtensions.dll
-Reference:C:\Users\robert.mocanu\.nuget\packages\microsoft.extensions.options\6.0.0\lib\netstandard2.1\Microsoft.Extensions.Options.dll
-Reference:C:\Users\robert.mocanu\.nuget\packages\microsoft.extensions.primitives\6.0.0\lib\net6.0\Microsoft.Extensions.Primitives.dll
+Reference:C:\Program Files\dotnet\packs\Microsoft.AspNetCore.App.Ref\6.0.11\ref\net6.0\Microsoft.Extensions.Caching.Abstractions.dll
+Reference:C:\Program Files\dotnet\packs\Microsoft.AspNetCore.App.Ref\6.0.11\ref\net6.0\Microsoft.Extensions.Caching.Memory.dll
+Reference:C:\Program Files\dotnet\packs\Microsoft.AspNetCore.App.Ref\6.0.11\ref\net6.0\Microsoft.Extensions.Configuration.Abstractions.dll
+Reference:C:\Program Files\dotnet\packs\Microsoft.AspNetCore.App.Ref\6.0.11\ref\net6.0\Microsoft.Extensions.Configuration.Binder.dll
+Reference:C:\Program Files\dotnet\packs\Microsoft.AspNetCore.App.Ref\6.0.11\ref\net6.0\Microsoft.Extensions.Configuration.CommandLine.dll
+Reference:C:\Program Files\dotnet\packs\Microsoft.AspNetCore.App.Ref\6.0.11\ref\net6.0\Microsoft.Extensions.Configuration.dll
+Reference:C:\Program Files\dotnet\packs\Microsoft.AspNetCore.App.Ref\6.0.11\ref\net6.0\Microsoft.Extensions.Configuration.EnvironmentVariables.dll
+Reference:C:\Program Files\dotnet\packs\Microsoft.AspNetCore.App.Ref\6.0.11\ref\net6.0\Microsoft.Extensions.Configuration.FileExtensions.dll
+Reference:C:\Program Files\dotnet\packs\Microsoft.AspNetCore.App.Ref\6.0.11\ref\net6.0\Microsoft.Extensions.Configuration.Ini.dll
+Reference:C:\Program Files\dotnet\packs\Microsoft.AspNetCore.App.Ref\6.0.11\ref\net6.0\Microsoft.Extensions.Configuration.Json.dll
+Reference:C:\Program Files\dotnet\packs\Microsoft.AspNetCore.App.Ref\6.0.11\ref\net6.0\Microsoft.Extensions.Configuration.KeyPerFile.dll
+Reference:C:\Program Files\dotnet\packs\Microsoft.AspNetCore.App.Ref\6.0.11\ref\net6.0\Microsoft.Extensions.Configuration.UserSecrets.dll
+Reference:C:\Program Files\dotnet\packs\Microsoft.AspNetCore.App.Ref\6.0.11\ref\net6.0\Microsoft.Extensions.Configuration.Xml.dll
+Reference:C:\Program Files\dotnet\packs\Microsoft.AspNetCore.App.Ref\6.0.11\ref\net6.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+Reference:C:\Program Files\dotnet\packs\Microsoft.AspNetCore.App.Ref\6.0.11\ref\net6.0\Microsoft.Extensions.DependencyInjection.dll
+Reference:C:\Users\ioan.manolea\.nuget\packages\microsoft.extensions.dependencymodel\6.0.0\lib\netstandard2.0\Microsoft.Extensions.DependencyModel.dll
+Reference:C:\Program Files\dotnet\packs\Microsoft.AspNetCore.App.Ref\6.0.11\ref\net6.0\Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions.dll
+Reference:C:\Program Files\dotnet\packs\Microsoft.AspNetCore.App.Ref\6.0.11\ref\net6.0\Microsoft.Extensions.Diagnostics.HealthChecks.dll
+Reference:C:\Program Files\dotnet\packs\Microsoft.AspNetCore.App.Ref\6.0.11\ref\net6.0\Microsoft.Extensions.Features.dll
+Reference:C:\Program Files\dotnet\packs\Microsoft.AspNetCore.App.Ref\6.0.11\ref\net6.0\Microsoft.Extensions.FileProviders.Abstractions.dll
+Reference:C:\Program Files\dotnet\packs\Microsoft.AspNetCore.App.Ref\6.0.11\ref\net6.0\Microsoft.Extensions.FileProviders.Composite.dll
+Reference:C:\Program Files\dotnet\packs\Microsoft.AspNetCore.App.Ref\6.0.11\ref\net6.0\Microsoft.Extensions.FileProviders.Embedded.dll
+Reference:C:\Program Files\dotnet\packs\Microsoft.AspNetCore.App.Ref\6.0.11\ref\net6.0\Microsoft.Extensions.FileProviders.Physical.dll
+Reference:C:\Program Files\dotnet\packs\Microsoft.AspNetCore.App.Ref\6.0.11\ref\net6.0\Microsoft.Extensions.FileSystemGlobbing.dll
+Reference:C:\Program Files\dotnet\packs\Microsoft.AspNetCore.App.Ref\6.0.11\ref\net6.0\Microsoft.Extensions.Hosting.Abstractions.dll
+Reference:C:\Program Files\dotnet\packs\Microsoft.AspNetCore.App.Ref\6.0.11\ref\net6.0\Microsoft.Extensions.Hosting.dll
+Reference:C:\Program Files\dotnet\packs\Microsoft.AspNetCore.App.Ref\6.0.11\ref\net6.0\Microsoft.Extensions.Http.dll
+Reference:C:\Program Files\dotnet\packs\Microsoft.AspNetCore.App.Ref\6.0.11\ref\net6.0\Microsoft.Extensions.Identity.Core.dll
+Reference:C:\Program Files\dotnet\packs\Microsoft.AspNetCore.App.Ref\6.0.11\ref\net6.0\Microsoft.Extensions.Identity.Stores.dll
+Reference:C:\Program Files\dotnet\packs\Microsoft.AspNetCore.App.Ref\6.0.11\ref\net6.0\Microsoft.Extensions.Localization.Abstractions.dll
+Reference:C:\Program Files\dotnet\packs\Microsoft.AspNetCore.App.Ref\6.0.11\ref\net6.0\Microsoft.Extensions.Localization.dll
+Reference:C:\Program Files\dotnet\packs\Microsoft.AspNetCore.App.Ref\6.0.11\ref\net6.0\Microsoft.Extensions.Logging.Abstractions.dll
+Reference:C:\Program Files\dotnet\packs\Microsoft.AspNetCore.App.Ref\6.0.11\ref\net6.0\Microsoft.Extensions.Logging.Configuration.dll
+Reference:C:\Program Files\dotnet\packs\Microsoft.AspNetCore.App.Ref\6.0.11\ref\net6.0\Microsoft.Extensions.Logging.Console.dll
+Reference:C:\Program Files\dotnet\packs\Microsoft.AspNetCore.App.Ref\6.0.11\ref\net6.0\Microsoft.Extensions.Logging.Debug.dll
+Reference:C:\Program Files\dotnet\packs\Microsoft.AspNetCore.App.Ref\6.0.11\ref\net6.0\Microsoft.Extensions.Logging.dll
+Reference:C:\Program Files\dotnet\packs\Microsoft.AspNetCore.App.Ref\6.0.11\ref\net6.0\Microsoft.Extensions.Logging.EventLog.dll
+Reference:C:\Program Files\dotnet\packs\Microsoft.AspNetCore.App.Ref\6.0.11\ref\net6.0\Microsoft.Extensions.Logging.EventSource.dll
+Reference:C:\Program Files\dotnet\packs\Microsoft.AspNetCore.App.Ref\6.0.11\ref\net6.0\Microsoft.Extensions.Logging.TraceSource.dll
+Reference:C:\Program Files\dotnet\packs\Microsoft.AspNetCore.App.Ref\6.0.11\ref\net6.0\Microsoft.Extensions.ObjectPool.dll
+Reference:C:\Program Files\dotnet\packs\Microsoft.AspNetCore.App.Ref\6.0.11\ref\net6.0\Microsoft.Extensions.Options.ConfigurationExtensions.dll
+Reference:C:\Program Files\dotnet\packs\Microsoft.AspNetCore.App.Ref\6.0.11\ref\net6.0\Microsoft.Extensions.Options.DataAnnotations.dll
+Reference:C:\Program Files\dotnet\packs\Microsoft.AspNetCore.App.Ref\6.0.11\ref\net6.0\Microsoft.Extensions.Options.dll
+Reference:C:\Program Files\dotnet\packs\Microsoft.AspNetCore.App.Ref\6.0.11\ref\net6.0\Microsoft.Extensions.Primitives.dll
+Reference:C:\Program Files\dotnet\packs\Microsoft.AspNetCore.App.Ref\6.0.11\ref\net6.0\Microsoft.Extensions.WebEncoders.dll
+Reference:C:\Program Files\dotnet\packs\Microsoft.AspNetCore.App.Ref\6.0.11\ref\net6.0\Microsoft.JSInterop.dll
+Reference:C:\Program Files\dotnet\packs\Microsoft.AspNetCore.App.Ref\6.0.11\ref\net6.0\Microsoft.Net.Http.Headers.dll
+Reference:C:\Users\ioan.manolea\.nuget\packages\microsoft.openapi\1.2.3\lib\netstandard2.0\Microsoft.OpenApi.dll
 Reference:C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\6.0.11\ref\net6.0\Microsoft.VisualBasic.Core.dll
 Reference:C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\6.0.11\ref\net6.0\Microsoft.VisualBasic.dll
 Reference:C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\6.0.11\ref\net6.0\Microsoft.Win32.Primitives.dll
 Reference:C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\6.0.11\ref\net6.0\Microsoft.Win32.Registry.dll
 Reference:C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\6.0.11\ref\net6.0\mscorlib.dll
 Reference:C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\6.0.11\ref\net6.0\netstandard.dll
-Reference:C:\Users\robert.mocanu\.nuget\packages\newtonsoft.json\13.0.1\lib\netstandard2.0\Newtonsoft.Json.dll
-Reference:C:\Users\robert.mocanu\.nuget\packages\microsoft.orleans.core.abstractions\3.6.0\lib\netstandard2.0\Orleans.Core.Abstractions.dll
-Reference:C:\Users\robert.mocanu\.nuget\packages\microsoft.orleans.core\3.6.0\lib\net6.0\Orleans.Core.dll
-Reference:C:\Users\robert.mocanu\.nuget\packages\microsoft.orleans.runtime.abstractions\3.6.0\lib\netstandard2.0\Orleans.Runtime.Abstractions.dll
-Reference:C:\Users\robert.mocanu\.nuget\packages\microsoft.orleans.orleansruntime\3.6.0\lib\net6.0\Orleans.Runtime.dll
-Reference:C:\Users\robert.mocanu\.nuget\packages\microsoft.orleans.transactions\3.6.0\lib\netstandard2.0\Orleans.Transactions.dll
+Reference:C:\Users\ioan.manolea\.nuget\packages\newtonsoft.json\13.0.1\lib\netstandard2.0\Newtonsoft.Json.dll
+Reference:C:\Users\ioan.manolea\.nuget\packages\microsoft.orleans.core.abstractions\3.6.0\lib\netstandard2.0\Orleans.Core.Abstractions.dll
+Reference:C:\Users\ioan.manolea\.nuget\packages\microsoft.orleans.core\3.6.0\lib\net6.0\Orleans.Core.dll
+Reference:C:\Users\ioan.manolea\.nuget\packages\microsoft.orleans.runtime.abstractions\3.6.0\lib\netstandard2.0\Orleans.Runtime.Abstractions.dll
+Reference:C:\Users\ioan.manolea\.nuget\packages\microsoft.orleans.orleansruntime\3.6.0\lib\net6.0\Orleans.Runtime.dll
+Reference:C:\Users\ioan.manolea\.nuget\packages\microsoft.orleans.transactions\3.6.0\lib\netstandard2.0\Orleans.Transactions.dll
+Reference:C:\Users\ioan.manolea\.nuget\packages\swashbuckle.aspnetcore.swagger\6.2.3\lib\net6.0\Swashbuckle.AspNetCore.Swagger.dll
+Reference:C:\Users\ioan.manolea\.nuget\packages\swashbuckle.aspnetcore.swaggergen\6.2.3\lib\net6.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+Reference:C:\Users\ioan.manolea\.nuget\packages\swashbuckle.aspnetcore.swaggerui\6.2.3\lib\net6.0\Swashbuckle.AspNetCore.SwaggerUI.dll
 Reference:C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\6.0.11\ref\net6.0\System.AppContext.dll
 Reference:C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\6.0.11\ref\net6.0\System.Buffers.dll
 Reference:C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\6.0.11\ref\net6.0\System.Collections.Concurrent.dll
@@ -61,6 +177,7 @@ Reference:C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\6.0.11\ref\net
 Reference:C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\6.0.11\ref\net6.0\System.Diagnostics.Contracts.dll
 Reference:C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\6.0.11\ref\net6.0\System.Diagnostics.Debug.dll
 Reference:C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\6.0.11\ref\net6.0\System.Diagnostics.DiagnosticSource.dll
+Reference:C:\Program Files\dotnet\packs\Microsoft.AspNetCore.App.Ref\6.0.11\ref\net6.0\System.Diagnostics.EventLog.dll
 Reference:C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\6.0.11\ref\net6.0\System.Diagnostics.FileVersionInfo.dll
 Reference:C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\6.0.11\ref\net6.0\System.Diagnostics.Process.dll
 Reference:C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\6.0.11\ref\net6.0\System.Diagnostics.StackTrace.dll
@@ -88,7 +205,7 @@ Reference:C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\6.0.11\ref\net
 Reference:C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\6.0.11\ref\net6.0\System.IO.FileSystem.Watcher.dll
 Reference:C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\6.0.11\ref\net6.0\System.IO.IsolatedStorage.dll
 Reference:C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\6.0.11\ref\net6.0\System.IO.MemoryMappedFiles.dll
-Reference:C:\Users\robert.mocanu\.nuget\packages\system.io.pipelines\6.0.0\lib\net6.0\System.IO.Pipelines.dll
+Reference:C:\Program Files\dotnet\packs\Microsoft.AspNetCore.App.Ref\6.0.11\ref\net6.0\System.IO.Pipelines.dll
 Reference:C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\6.0.11\ref\net6.0\System.IO.Pipes.AccessControl.dll
 Reference:C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\6.0.11\ref\net6.0\System.IO.Pipes.dll
 Reference:C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\6.0.11\ref\net6.0\System.IO.UnmanagedMemoryStream.dll
@@ -154,6 +271,7 @@ Reference:C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\6.0.11\ref\net
 Reference:C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\6.0.11\ref\net6.0\System.Security.Cryptography.OpenSsl.dll
 Reference:C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\6.0.11\ref\net6.0\System.Security.Cryptography.Primitives.dll
 Reference:C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\6.0.11\ref\net6.0\System.Security.Cryptography.X509Certificates.dll
+Reference:C:\Program Files\dotnet\packs\Microsoft.AspNetCore.App.Ref\6.0.11\ref\net6.0\System.Security.Cryptography.Xml.dll
 Reference:C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\6.0.11\ref\net6.0\System.Security.dll
 Reference:C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\6.0.11\ref\net6.0\System.Security.Principal.dll
 Reference:C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\6.0.11\ref\net6.0\System.Security.Principal.Windows.dll
@@ -191,6 +309,7 @@ Reference:C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\6.0.11\ref\net
 Reference:C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\6.0.11\ref\net6.0\System.Xml.XmlSerializer.dll
 Reference:C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\6.0.11\ref\net6.0\System.Xml.XPath.dll
 Reference:C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\6.0.11\ref\net6.0\System.Xml.XPath.XDocument.dll
+Reference:D:\Dev\bankTransfer\BankAccountBE\WebAPI\bin\Debug\net6.0\WebAPI.dll
 Reference:C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\6.0.11\ref\net6.0\WindowsBase.dll
 DefineConstants:TRACE,DEBUG,NET,NET6_0,NETCOREAPP
-InputHash:d20fa82ddc3929db9b71bd61ed70d1fda0650453
+InputHash:9261b5a450f6e15b0de61e461ea28f83454e8705
