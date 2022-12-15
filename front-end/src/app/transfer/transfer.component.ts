@@ -43,24 +43,24 @@ export class TransferComponent implements OnInit {
 
   //refreshList
   refreshAccountList(){
-    
+    window.location.reload();
   }
 
   submit(){
     const fromEmail = this.transferFC.value.fromEmail
     const toEmail = this.transferFC.value.toEmail
     const amount = this.transferFC.value.amount
-    return this.services.getAccount().subscribe((data: Account) => {
-      if(data.email = fromEmail){
-        this.services.trensferMoney(fromEmail, toEmail, amount).subscribe(this.handleError)
-      }else{
-        console.log("bad!!!!")
-      }
-    })
-    
-    // this.services.trensferMoney(fromEmail, toEmail, amount).subscribe(
-    //   this.handleError
-    // )
+    return this.services.trensferMoney(fromEmail, toEmail, amount).subscribe(
+      this.handleError
+    )
+
+    // this.services.getAccount().subscribe((data: Account) => {
+    //   if(data.email = fromEmail){
+    //     this.services.trensferMoney(fromEmail, toEmail, amount).subscribe(this.handleError)
+    //   }else{
+    //     console.log("bad!!!!")
+    //   }
+    // })
   }
 
   private handleError(error: HttpResponseBase | Error): void {
