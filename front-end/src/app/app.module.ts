@@ -7,11 +7,13 @@ import { AccountsComponent } from './accounts/accounts.component';
 import { TransferComponent } from './transfer/transfer.component';
 import { HttpClientModule } from '@angular/common/http'
 import { ReactiveFormsModule } from '@angular/forms';
+import { CreateAccountComponent } from './create-account/create-account.component';
 @NgModule({
   declarations: [
     AppComponent,
     AccountsComponent,
-    TransferComponent
+    TransferComponent,
+    CreateAccountComponent
   ],
   imports: [
     BrowserModule,

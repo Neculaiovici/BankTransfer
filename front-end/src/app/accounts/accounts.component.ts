@@ -8,7 +8,6 @@ import { Account } from '../models/account.interface';
   styleUrls: ['./accounts.component.scss']
 })
 export class AccountsComponent implements OnInit {
-
   public account:any = []
 
   constructor(private services: ServicesService) { }
@@ -17,10 +16,15 @@ export class AccountsComponent implements OnInit {
     this.GetAllAccounts()
   }
 
+  //refreshList
+  refreshAccountList(){
+    window.location.reload();
+  }
+
   GetAllAccounts(){
     this.services.getAccount().subscribe((data:Account) => {
       this.account = data,
-      console.log(data)
+      localStorage.setItem('accounts', JSON.stringify(data))
     })
   }
 }

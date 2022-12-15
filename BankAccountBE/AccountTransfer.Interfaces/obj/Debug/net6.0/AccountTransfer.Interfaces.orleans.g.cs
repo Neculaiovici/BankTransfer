@@ -341,6 +341,7 @@ namespace OrleansGeneratedCode
             feature.AddKnownType("AccountTransfer.Interfaces.States.BankAccount,AccountTransfer.Interfaces", "AccountTransfer.Interfaces.States.BankAccount");
             feature.AddKnownType("System.Collections.Generic.List`1", "List`1'1");
             feature.AddKnownType("AccountTransfer.Interfaces.IAtmGrain,AccountTransfer.Interfaces", "AccountTransfer.Interfaces.IAtmGrain");
+            feature.AddKnownType("AccountTransfer.Interfaces.ICreateGrain,AccountTransfer.Interfaces", "AccountTransfer.Interfaces.ICreateGrain");
             feature.AddKnownType("AccountTransfer.Interfaces.States.BankAccountState,AccountTransfer.Interfaces", "AccountTransfer.Interfaces.States.BankAccountState");
             feature.AddKnownType("Microsoft.CSharp.RuntimeBinder.CSharpArgumentInfo,Microsoft.CSharp", "Microsoft.CSharp.RuntimeBinder.CSharpArgumentInfo");
             feature.AddKnownType("Microsoft.CSharp.RuntimeBinder.CSharpArgumentInfoFlags,Microsoft.CSharp", "Microsoft.CSharp.RuntimeBinder.CSharpArgumentInfoFlags");

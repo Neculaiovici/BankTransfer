@@ -4393,6 +4393,7 @@ namespace OrleansGeneratedCode
             feature.AddKnownType("System.Runtime.CompilerServices.NullableContextAttribute", "NullableContextAttribute");
             feature.AddKnownType("WebAPI.Startup,WebAPI", "WebAPI.Startup");
             feature.AddKnownType("WebAPI.Controllers.ClientController,WebAPI", "WebAPI.Controllers.ClientController");
+            feature.AddKnownType("WebAPI.Dtos.Account,WebAPI", "WebAPI.Dtos.Account");
             feature.AddKnownType("WebAPI.Dtos.Transfer,WebAPI", "WebAPI.Dtos.Transfer");
             feature.AddKnownType("WebAPI.Properties.Resources,WebAPI", "WebAPI.Properties.Resources");
         }
