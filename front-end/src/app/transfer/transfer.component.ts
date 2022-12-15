@@ -47,7 +47,7 @@ export class TransferComponent implements OnInit {
   }
 
   submit(){
-    const fromEmail = 'robert@gmail.com' //this.transferFC.value.fromEmail
+    const fromEmail = this.transferFC.value.fromEmail
     const toEmail = this.transferFC.value.toEmail
     const amount = this.transferFC.value.amount
     return this.services.getAccount().subscribe((data: Account) => {

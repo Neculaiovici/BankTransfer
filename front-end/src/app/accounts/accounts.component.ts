@@ -19,7 +19,7 @@ export class AccountsComponent implements OnInit {
 
   GetAllAccounts(){
     this.services.getAccount().subscribe((data:Account) => {
-      this.account = [data],
+      this.account = data,
       console.log(data)
     })
   }

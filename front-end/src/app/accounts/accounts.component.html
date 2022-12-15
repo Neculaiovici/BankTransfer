@@ -1,7 +1,13 @@
-<h1>Accounts details</h1>
-<div >
-    <ul *ngFor="let acc of account">
-        <li>{{acc.email}}</li>
-        <li>{{acc.balance}}</li>
-    </ul>
+<div class="jumbotron">
+    <h1 class="text-center">Accounts details</h1>
+</div>
+<div class="container">
+    <div class="row">
+        <ul class="unlisted-item col-12" *ngFor="let acc of account">
+            <li>{{acc.email}}</li>
+            <li>{{acc.balance}}</li>
+            <li>{{acc.fullName}}</li>
+            <li>{{acc.exp}}</li>
+        </ul>
+    </div>
 </div>

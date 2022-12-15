@@ -2307,23 +2307,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\ioan.manolea\\.nuget\\packages\\": {},
+    "C:\\Users\\robert.mocanu\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Dev\\bankTransfer\\BankAccountBE\\AccountTransfer.Grains\\AccountTransfer.Grains.csproj",
+      "projectUniqueName": "C:\\Users\\robert.mocanu\\Desktop\\bankTransfer\\BankAccountBE\\AccountTransfer.Grains\\AccountTransfer.Grains.csproj",
       "projectName": "AccountTransfer.Grains",
-      "projectPath": "D:\\Dev\\bankTransfer\\BankAccountBE\\AccountTransfer.Grains\\AccountTransfer.Grains.csproj",
-      "packagesPath": "C:\\Users\\ioan.manolea\\.nuget\\packages\\",
-      "outputPath": "D:\\Dev\\bankTransfer\\BankAccountBE\\AccountTransfer.Grains\\obj\\",
+      "projectPath": "C:\\Users\\robert.mocanu\\Desktop\\bankTransfer\\BankAccountBE\\AccountTransfer.Grains\\AccountTransfer.Grains.csproj",
+      "packagesPath": "C:\\Users\\robert.mocanu\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\robert.mocanu\\Desktop\\bankTransfer\\BankAccountBE\\AccountTransfer.Grains\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\ioan.manolea\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\robert.mocanu\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -2338,11 +2338,11 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "D:\\Dev\\bankTransfer\\BankAccountBE\\AccountTransfer.Interfaces\\AccountTransfer.Interfaces.csproj": {
-              "projectPath": "D:\\Dev\\bankTransfer\\BankAccountBE\\AccountTransfer.Interfaces\\AccountTransfer.Interfaces.csproj"
+            "C:\\Users\\robert.mocanu\\Desktop\\bankTransfer\\BankAccountBE\\AccountTransfer.Interfaces\\AccountTransfer.Interfaces.csproj": {
+              "projectPath": "C:\\Users\\robert.mocanu\\Desktop\\bankTransfer\\BankAccountBE\\AccountTransfer.Interfaces\\AccountTransfer.Interfaces.csproj"
             },
-            "D:\\Dev\\bankTransfer\\BankAccountBE\\WebAPI\\WebAPI.csproj": {
-              "projectPath": "D:\\Dev\\bankTransfer\\BankAccountBE\\WebAPI\\WebAPI.csproj"
+            "C:\\Users\\robert.mocanu\\Desktop\\bankTransfer\\BankAccountBE\\WebAPI\\WebAPI.csproj": {
+              "projectPath": "C:\\Users\\robert.mocanu\\Desktop\\bankTransfer\\BankAccountBE\\WebAPI\\WebAPI.csproj"
             }
           }
         }

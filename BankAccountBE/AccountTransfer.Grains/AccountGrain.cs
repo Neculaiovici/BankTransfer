@@ -57,7 +57,7 @@ public class AccountGrain : Grain, IAccountGrain
         {
             Email = this.GetPrimaryKeyString(),
             Balance = await GetBalance(),
-            FUllName = this.FullName,
+            FullName = this.FullName,
             Exp = this.Exp
         };
     }

@@ -1,13 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "ko7Wc9zUJWV3VeCFXJ3snXt/G1G7reQMxL1LkQ9pnSeTdtYbtm0n0OqJ11hB+CQHT9SiegG6foiDJ/9sgNRnKA==",
+  "dgSpecHash": "sqWI2h49ztnLklMZvJK8RO1mA1wwjcS+IzxiVh+GFy13ShQN1ngilN/3Xisz+QweXMREV9RNNeNHRmRN8NKzmA==",
   "success": true,
-  "projectFilePath": "D:\\Dev\\bankTransfer\\BankAccountBE\\AccountTransfer.Interfaces\\AccountTransfer.Interfaces.csproj",
+  "projectFilePath": "C:\\Users\\robert.mocanu\\Desktop\\bankTransfer\\BankAccountBE\\AccountTransfer.Interfaces\\AccountTransfer.Interfaces.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\ioan.manolea\\.nuget\\packages\\microsoft.orleans.codegenerator.msbuild\\3.6.0\\microsoft.orleans.codegenerator.msbuild.3.6.0.nupkg.sha512",
-    "C:\\Users\\ioan.manolea\\.nuget\\packages\\microsoft.orleans.core.abstractions\\3.6.0\\microsoft.orleans.core.abstractions.3.6.0.nupkg.sha512",
-    "C:\\Users\\ioan.manolea\\.nuget\\packages\\system.memory\\4.5.4\\system.memory.4.5.4.nupkg.sha512",
-    "C:\\Users\\ioan.manolea\\.nuget\\packages\\system.threading.tasks.extensions\\4.5.4\\system.threading.tasks.extensions.4.5.4.nupkg.sha512"
+    "C:\\Users\\robert.mocanu\\.nuget\\packages\\microsoft.orleans.codegenerator.msbuild\\3.6.0\\microsoft.orleans.codegenerator.msbuild.3.6.0.nupkg.sha512",
+    "C:\\Users\\robert.mocanu\\.nuget\\packages\\microsoft.orleans.core.abstractions\\3.6.0\\microsoft.orleans.core.abstractions.3.6.0.nupkg.sha512",
+    "C:\\Users\\robert.mocanu\\.nuget\\packages\\system.memory\\4.5.4\\system.memory.4.5.4.nupkg.sha512",
+    "C:\\Users\\robert.mocanu\\.nuget\\packages\\system.threading.tasks.extensions\\4.5.4\\system.threading.tasks.extensions.4.5.4.nupkg.sha512"
   ],
   "logs": []
 }

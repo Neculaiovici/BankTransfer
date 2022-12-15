@@ -35,7 +35,7 @@ namespace WebAPI.Controllers
             return await grain.GetAccount();
         }
 
-        [HttpGet("/getAll")]
+        [HttpGet("getAll")]
         public async Task<List<BankAccount>> GetAll()
         {
             var res = await _client.GetGrain<IAccountGrain>("Memory Cache").GetAllIds();
