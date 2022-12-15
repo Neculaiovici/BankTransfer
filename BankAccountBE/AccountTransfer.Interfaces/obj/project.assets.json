@@ -422,23 +422,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\robert.mocanu\\.nuget\\packages\\": {},
+    "C:\\Users\\ioan.manolea\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\robert.mocanu\\Desktop\\bankTransfer\\BankAccountBE\\AccountTransfer.Interfaces\\AccountTransfer.Interfaces.csproj",
+      "projectUniqueName": "D:\\Dev\\banTransfer\\BankAccountBE\\AccountTransfer.Interfaces\\AccountTransfer.Interfaces.csproj",
       "projectName": "AccountTransfer.Interfaces",
-      "projectPath": "C:\\Users\\robert.mocanu\\Desktop\\bankTransfer\\BankAccountBE\\AccountTransfer.Interfaces\\AccountTransfer.Interfaces.csproj",
-      "packagesPath": "C:\\Users\\robert.mocanu\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\robert.mocanu\\Desktop\\bankTransfer\\BankAccountBE\\AccountTransfer.Interfaces\\obj\\",
+      "projectPath": "D:\\Dev\\banTransfer\\BankAccountBE\\AccountTransfer.Interfaces\\AccountTransfer.Interfaces.csproj",
+      "packagesPath": "C:\\Users\\ioan.manolea\\.nuget\\packages\\",
+      "outputPath": "D:\\Dev\\banTransfer\\BankAccountBE\\AccountTransfer.Interfaces\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\robert.mocanu\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\ioan.manolea\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],

@@ -8,4 +8,4 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = BankClient
-build_property.ProjectDir = C:\Users\robert.mocanu\Desktop\bankTransfer\BankAccountBE\BankClient\
+build_property.ProjectDir = D:\Dev\banTransfer\BankAccountBE\BankClient\

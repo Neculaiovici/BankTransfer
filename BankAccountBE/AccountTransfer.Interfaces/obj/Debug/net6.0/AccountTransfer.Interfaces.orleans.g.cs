@@ -234,7 +234,6 @@ namespace AccountTransfer.Interfaces.States
             context.RecordCopy(original, result);
             result.Balance = input.Balance;
             result.Email = input.Email;
-            result.Id = input.Id;
             return result;
         }
 
@@ -244,7 +243,6 @@ namespace AccountTransfer.Interfaces.States
             global::AccountTransfer.Interfaces.States.BankAccount input = (global::AccountTransfer.Interfaces.States.BankAccount)untypedInput;
             context.SerializeInner(input.Balance, typeof(uint));
             context.SerializeInner(input.Email, typeof(string));
-            context.SerializeInner(input.Id, typeof(int));
         }
 
         [global::Orleans.CodeGeneration.DeserializerMethodAttribute]
@@ -254,7 +252,6 @@ namespace AccountTransfer.Interfaces.States
             context.RecordObject(result);
             result.Balance = (uint)context.DeserializeInner(typeof(uint));
             result.Email = (string)context.DeserializeInner(typeof(string));
-            result.Id = (int)context.DeserializeInner(typeof(int));
             return (global::AccountTransfer.Interfaces.States.BankAccount)result;
         }
     }

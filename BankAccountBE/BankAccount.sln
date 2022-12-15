@@ -4,10 +4,6 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 VisualStudioVersion = 17.4.33110.190
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BankServer", "BankServer\BankServer.csproj", "{8833CADE-80B5-4AA1-835E-594E907C58DF}"
-	ProjectSection(ProjectDependencies) = postProject
-		{102017CA-6AA9-4E5F-A95B-2C4E471BAB15} = {102017CA-6AA9-4E5F-A95B-2C4E471BAB15}
-		{18DFEAE0-0000-4EFF-825F-2150B0C509F8} = {18DFEAE0-0000-4EFF-825F-2150B0C509F8}
-	EndProjectSection
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BankClient", "BankClient\BankClient.csproj", "{18DFEAE0-0000-4EFF-825F-2150B0C509F8}"
 EndProject
@@ -20,7 +16,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		README.md = README.md
 	EndProjectSection
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebAPI", "WebAPI\WebAPI.csproj", "{102017CA-6AA9-4E5F-A95B-2C4E471BAB15}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebAPI", "WebAPI\WebAPI.csproj", "{102017CA-6AA9-4E5F-A95B-2C4E471BAB15}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
