@@ -1,1 +1,7 @@
-<p>accounts works!</p>
+<h1>Accounts details</h1>
+<div >
+    <ul *ngFor="let acc of account">
+        <li>{{acc.email}}</li>
+        <li>{{acc.balance}}</li>
+    </ul>
+</div>
