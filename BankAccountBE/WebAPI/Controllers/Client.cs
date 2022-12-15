@@ -26,11 +26,11 @@ namespace WebAPI.Controllers
             _client = client;
         }
 
-        [HttpGet]
-        public async Task<BankAccount> Get(string email, string fullName, string Exp = "6/25", uint Balance = 1000)
+        [HttpPost]
+        public async Task<BankAccount> Get([FromBody] Account account)
         {
-            var grain = _client.GetGrain<IAccountGrain>(email);
-            await grain.Init(fullName, Exp, Balance);
+            var grain = _client.GetGrain<IAccountGrain>(account.Email);
+            await grain.Init(account.FullName, account.Exp, account.Balance);
 
             return await grain.GetAccount();
         }
@@ -39,6 +39,7 @@ namespace WebAPI.Controllers
         public async Task<List<BankAccount>> GetAll()
         {
             var res = await _client.GetGrain<IAccountGrain>("Memory Cache").GetAllIds();
+            res = res.FindAll(i => i.Email != "Memory Cache");
             return res;
         }
 

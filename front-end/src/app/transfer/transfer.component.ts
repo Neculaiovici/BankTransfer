@@ -1,9 +1,6 @@
 import { HttpResponseBase } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
-import { switchMap } from 'rxjs';
-import { Accounts } from '../accounts';
-import { Account } from '../models/account.interface';
 import { ServicesService } from '../services.service';
 
 @Component({
@@ -39,11 +36,6 @@ export class TransferComponent implements OnInit {
 
   ngOnInit(): void {
     
-  }
-
-  //refreshList
-  refreshAccountList(){
-    window.location.reload();
   }
 
   submit(){

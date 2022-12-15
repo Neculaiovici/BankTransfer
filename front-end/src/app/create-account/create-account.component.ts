@@ -47,10 +47,9 @@ export class CreateAccountComponent implements OnInit {
     const email = this.account.value.email
     const fullName = this.account.value.fullName
     const exp = this.account.value.exp
-    const balance = this.account.value.balance
-    return this.services.createAccount(email, fullName, exp, balance).subscribe(
-      this.handleError
-    )
+    const balance = Number(this.account.value.balance)
+
+    return this.services.createAccount(email, fullName, exp, balance).subscribe(this.handleError)
   }
 
   private handleError(error: HttpResponseBase | Error): void {

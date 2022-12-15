@@ -2,7 +2,7 @@ import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { catchError, Observable, retry, throwError } from 'rxjs';
 import { Account } from './models/account.interface';
-import { Transfer } from './models/transfer.interface';
+
 
 @Injectable({
   providedIn: 'root'
@@ -22,11 +22,11 @@ export class ServicesService {
   }
 
   //create account
-  createAccount(email:string, balance:string, fullName:string, exp:string):Observable<any>{
-    const body = {email: email, fullName: fullName, balance: balance, exp: exp}
+  createAccount(email:string, fullName:string, exp:string, balance:number):Observable<any>{
+    const body = {email: email, fullName: fullName, exp: exp, balance: balance}
     const headers = new HttpHeaders().set('Content-Type', 'application/json; charset=utf-8');
-    return this.http.post(`${this.url}`, body, {headers: headers, observe: 'response'})
-      .pipe(catchError(this.handleError))
+    return this.http.post(`${this.url}/`, body, {headers: headers, observe: 'response', reportProgress: true})
+      .pipe(catchError(this.handleError));
   }
 
   //transfer money

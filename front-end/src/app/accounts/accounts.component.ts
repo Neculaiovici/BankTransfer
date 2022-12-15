@@ -16,6 +16,11 @@ export class AccountsComponent implements OnInit {
     this.GetAllAccounts()
   }
 
+  //refreshList
+  refreshAccountList(){
+    window.location.reload();
+  }
+
   GetAllAccounts(){
     this.services.getAccount().subscribe((data:Account) => {
       this.account = data,
