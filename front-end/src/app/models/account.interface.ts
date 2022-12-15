@@ -1,4 +1,6 @@
 export interface Account{
     email: string
-    amount: number
+    balance: number
+    fullName: string
+    exp: string
 }

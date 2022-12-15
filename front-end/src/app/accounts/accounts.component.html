@@ -1,1 +1,87 @@
-<p>accounts works!</p>
+<div class="container">
+    <div class="ctrls">
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#registerModal"
+            data-bs-whatever="@getbootstrap">Add
+            Account</button>
+
+        <button type="button" class="btn btn-outline-primary transfer" data-bs-toggle="modal"
+            data-bs-target="#transferModal" data-bs-whatever="@getbootstrap">
+            Transfer</button>
+    </div>
+    <div class="row cards-cotaniner">
+        <div class="card" *ngFor="let acc of account">
+            <img src="../../assets/integrisoft-logo.png" alt="image" class="logo">
+            <div class="top">
+                <h1>Current Balance</h1>
+                <h2>${{acc.balance}}</h2>
+            </div>
+
+            <div class="bottom">
+                <div class="uinfo">
+                    <p class="fullname">{{acc.fullName}}</p>
+                    <p class="email">{{acc.email}}</p>
+                </div>
+                <p class="exp">{{acc.exp}}</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- REGISTER MODAL -->
+    <div class="modal fade" id="registerModal" tabindex="-1" aria-labelledby="registerModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5 w-100 text-center" id="registerModalLabel">Create Account</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body cmbody">
+                    <form>
+                        <div class="mb-3">
+                            <input type="text" class="form-control" id="fullName" placeholder="Full Name">
+                        </div>
+                        <div class="mb-3">
+                            <input type="text" class="form-control" id="email" placeholder="Email">
+                        </div>
+                        <div class="mb-3">
+                            <input type="text" class="form-control" id="balance" placeholder="Balance">
+                        </div>
+                        <div class="mb-3">
+                            <input type="text" class="form-control" id="expdate" placeholder="Exp Date">
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer justify-content-center">
+                    <button type="button" class="btn btn-outline-primary text-center customBtn">Create</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- TRANSFER MODAL -->
+    <div class="modal fade" id="transferModal" tabindex="-1" aria-labelledby="transferModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5 w-100 text-center" id="transferModalLabel">Transfer Money</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body cmbody">
+                    <form>
+                        <div class="mb-3">
+                            <input type="text" class="form-control" id="email" placeholder="From (Email)">
+                        </div>
+                        <div class="mb-3">
+                            <input type="text" class="form-control" id="email" placeholder="To (Email)">
+                        </div>
+                        <div class="mb-3">
+                            <input type="text" class="form-control" id="balance" placeholder="Balance">
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer justify-content-center">
+                    <button type="button" class="btn btn-outline-primary text-center customBtn">Transfer</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

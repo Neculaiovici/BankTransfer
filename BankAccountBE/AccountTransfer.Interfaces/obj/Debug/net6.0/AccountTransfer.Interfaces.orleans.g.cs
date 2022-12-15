@@ -254,7 +254,7 @@ namespace AccountTransfer.Interfaces.States
             result.Balance = input.Balance;
             result.Email = input.Email;
             result.Exp = input.Exp;
-            result.FUllName = input.FUllName;
+            result.FullName = input.FullName;
             return result;
         }
 
@@ -265,7 +265,7 @@ namespace AccountTransfer.Interfaces.States
             context.SerializeInner(input.Balance, typeof(uint));
             context.SerializeInner(input.Email, typeof(string));
             context.SerializeInner(input.Exp, typeof(string));
-            context.SerializeInner(input.FUllName, typeof(string));
+            context.SerializeInner(input.FullName, typeof(string));
         }
 
         [global::Orleans.CodeGeneration.DeserializerMethodAttribute]
@@ -276,7 +276,7 @@ namespace AccountTransfer.Interfaces.States
             result.Balance = (uint)context.DeserializeInner(typeof(uint));
             result.Email = (string)context.DeserializeInner(typeof(string));
             result.Exp = (string)context.DeserializeInner(typeof(string));
-            result.FUllName = (string)context.DeserializeInner(typeof(string));
+            result.FullName = (string)context.DeserializeInner(typeof(string));
             return (global::AccountTransfer.Interfaces.States.BankAccount)result;
         }
     }

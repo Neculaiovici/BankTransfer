@@ -1,1 +1,9 @@
-<p>transfer works!</p>
+<h1>Transfer money</h1>
+<div>
+    <form [formGroup]="transferFC" (ngSubmit)="submit()">
+        <input placeholder="fromEmail" formControlName="fromEmail" required>
+        <input placeholder="toEmail" formControlName="toEmail" required>
+        <input placeholder="amount" formControlName="amount" required>
+        <button>Transfer</button>
+    </form>
+</div>
