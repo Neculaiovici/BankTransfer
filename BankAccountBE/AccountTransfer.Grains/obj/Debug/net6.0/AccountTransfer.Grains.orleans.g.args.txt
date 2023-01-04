@@ -1,15 +1,15 @@
 LogLevel:Warning
-ProjectPath:C:\Users\ioan.manolea\Desktop\proj\BankAccountBE\AccountTransfer.Grains\AccountTransfer.Grains.csproj
+ProjectPath:C:\Users\robert.mocanu\Desktop\bankTransfer\BankAccountBE\AccountTransfer.Grains\AccountTransfer.Grains.csproj
 ProjectGuid:
 AssemblyName:AccountTransfer.Grains
 OutputType:Library
-TargetPath:C:\Users\ioan.manolea\Desktop\proj\BankAccountBE\AccountTransfer.Grains\bin\Debug\net6.0\AccountTransfer.Grains.dll
-CodeGenOutputFile:C:\Users\ioan.manolea\Desktop\proj\BankAccountBE\AccountTransfer.Grains\obj\Debug\net6.0\AccountTransfer.Grains.orleans.g.cs
-Compile:C:\Users\ioan.manolea\Desktop\proj\BankAccountBE\AccountTransfer.Grains\AccountGrain.cs
-Compile:C:\Users\ioan.manolea\Desktop\proj\BankAccountBE\AccountTransfer.Grains\AtmGrain.cs
-Compile:C:\Users\ioan.manolea\Desktop\proj\BankAccountBE\AccountTransfer.Grains\MemoryCache.cs
-Compile:C:\Users\ioan.manolea\Desktop\proj\BankAccountBE\AccountTransfer.Grains\obj\Debug\net6.0\AccountTransfer.Grains.GlobalUsings.g.cs
-Reference:C:\Users\ioan.manolea\Desktop\proj\BankAccountBE\AccountTransfer.Interfaces\bin\Debug\net6.0\AccountTransfer.Interfaces.dll
+TargetPath:C:\Users\robert.mocanu\Desktop\bankTransfer\BankAccountBE\AccountTransfer.Grains\bin\Debug\net6.0\AccountTransfer.Grains.dll
+CodeGenOutputFile:C:\Users\robert.mocanu\Desktop\bankTransfer\BankAccountBE\AccountTransfer.Grains\obj\Debug\net6.0\AccountTransfer.Grains.orleans.g.cs
+Compile:C:\Users\robert.mocanu\Desktop\bankTransfer\BankAccountBE\AccountTransfer.Grains\AccountGrain.cs
+Compile:C:\Users\robert.mocanu\Desktop\bankTransfer\BankAccountBE\AccountTransfer.Grains\AtmGrain.cs
+Compile:C:\Users\robert.mocanu\Desktop\bankTransfer\BankAccountBE\AccountTransfer.Grains\MemoryCache.cs
+Compile:C:\Users\robert.mocanu\Desktop\bankTransfer\BankAccountBE\AccountTransfer.Grains\obj\Debug\net6.0\AccountTransfer.Grains.GlobalUsings.g.cs
+Reference:C:\Users\robert.mocanu\Desktop\bankTransfer\BankAccountBE\AccountTransfer.Interfaces\bin\Debug\net6.0\AccountTransfer.Interfaces.dll
 Reference:C:\Program Files\dotnet\packs\Microsoft.AspNetCore.App.Ref\6.0.11\ref\net6.0\Microsoft.AspNetCore.Antiforgery.dll
 Reference:C:\Program Files\dotnet\packs\Microsoft.AspNetCore.App.Ref\6.0.11\ref\net6.0\Microsoft.AspNetCore.Authentication.Abstractions.dll
 Reference:C:\Program Files\dotnet\packs\Microsoft.AspNetCore.App.Ref\6.0.11\ref\net6.0\Microsoft.AspNetCore.Authentication.Cookies.dll
@@ -90,7 +90,7 @@ Reference:C:\Program Files\dotnet\packs\Microsoft.AspNetCore.App.Ref\6.0.11\ref\
 Reference:C:\Program Files\dotnet\packs\Microsoft.AspNetCore.App.Ref\6.0.11\ref\net6.0\Microsoft.AspNetCore.StaticFiles.dll
 Reference:C:\Program Files\dotnet\packs\Microsoft.AspNetCore.App.Ref\6.0.11\ref\net6.0\Microsoft.AspNetCore.WebSockets.dll
 Reference:C:\Program Files\dotnet\packs\Microsoft.AspNetCore.App.Ref\6.0.11\ref\net6.0\Microsoft.AspNetCore.WebUtilities.dll
-Reference:C:\Users\ioan.manolea\.nuget\packages\microsoft.bcl.asyncinterfaces\6.0.0\lib\netstandard2.1\Microsoft.Bcl.AsyncInterfaces.dll
+Reference:C:\Users\robert.mocanu\.nuget\packages\microsoft.bcl.asyncinterfaces\6.0.0\lib\netstandard2.1\Microsoft.Bcl.AsyncInterfaces.dll
 Reference:C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\6.0.11\ref\net6.0\Microsoft.CSharp.dll
 Reference:C:\Program Files\dotnet\packs\Microsoft.AspNetCore.App.Ref\6.0.11\ref\net6.0\Microsoft.Extensions.Caching.Abstractions.dll
 Reference:C:\Program Files\dotnet\packs\Microsoft.AspNetCore.App.Ref\6.0.11\ref\net6.0\Microsoft.Extensions.Caching.Memory.dll
@@ -107,7 +107,7 @@ Reference:C:\Program Files\dotnet\packs\Microsoft.AspNetCore.App.Ref\6.0.11\ref\
 Reference:C:\Program Files\dotnet\packs\Microsoft.AspNetCore.App.Ref\6.0.11\ref\net6.0\Microsoft.Extensions.Configuration.Xml.dll
 Reference:C:\Program Files\dotnet\packs\Microsoft.AspNetCore.App.Ref\6.0.11\ref\net6.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
 Reference:C:\Program Files\dotnet\packs\Microsoft.AspNetCore.App.Ref\6.0.11\ref\net6.0\Microsoft.Extensions.DependencyInjection.dll
-Reference:C:\Users\ioan.manolea\.nuget\packages\microsoft.extensions.dependencymodel\6.0.0\lib\netstandard2.0\Microsoft.Extensions.DependencyModel.dll
+Reference:C:\Users\robert.mocanu\.nuget\packages\microsoft.extensions.dependencymodel\6.0.0\lib\netstandard2.0\Microsoft.Extensions.DependencyModel.dll
 Reference:C:\Program Files\dotnet\packs\Microsoft.AspNetCore.App.Ref\6.0.11\ref\net6.0\Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions.dll
 Reference:C:\Program Files\dotnet\packs\Microsoft.AspNetCore.App.Ref\6.0.11\ref\net6.0\Microsoft.Extensions.Diagnostics.HealthChecks.dll
 Reference:C:\Program Files\dotnet\packs\Microsoft.AspNetCore.App.Ref\6.0.11\ref\net6.0\Microsoft.Extensions.Features.dll
@@ -139,14 +139,13 @@ Reference:C:\Program Files\dotnet\packs\Microsoft.AspNetCore.App.Ref\6.0.11\ref\
 Reference:C:\Program Files\dotnet\packs\Microsoft.AspNetCore.App.Ref\6.0.11\ref\net6.0\Microsoft.Extensions.WebEncoders.dll
 Reference:C:\Program Files\dotnet\packs\Microsoft.AspNetCore.App.Ref\6.0.11\ref\net6.0\Microsoft.JSInterop.dll
 Reference:C:\Program Files\dotnet\packs\Microsoft.AspNetCore.App.Ref\6.0.11\ref\net6.0\Microsoft.Net.Http.Headers.dll
-Reference:C:\Users\ioan.manolea\.nuget\packages\microsoft.openapi\1.2.3\lib\netstandard2.0\Microsoft.OpenApi.dll
+Reference:C:\Users\robert.mocanu\.nuget\packages\microsoft.openapi\1.2.3\lib\netstandard2.0\Microsoft.OpenApi.dll
 Reference:C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\6.0.11\ref\net6.0\Microsoft.VisualBasic.Core.dll
 Reference:C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\6.0.11\ref\net6.0\Microsoft.VisualBasic.dll
 Reference:C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\6.0.11\ref\net6.0\Microsoft.Win32.Primitives.dll
 Reference:C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\6.0.11\ref\net6.0\Microsoft.Win32.Registry.dll
 Reference:C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\6.0.11\ref\net6.0\mscorlib.dll
 Reference:C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\6.0.11\ref\net6.0\netstandard.dll
-<<<<<<< HEAD
 Reference:C:\Users\robert.mocanu\.nuget\packages\newtonsoft.json\13.0.1\lib\netstandard2.0\Newtonsoft.Json.dll
 Reference:C:\Users\robert.mocanu\.nuget\packages\microsoft.orleans.core.abstractions\3.6.0\lib\netstandard2.0\Orleans.Core.Abstractions.dll
 Reference:C:\Users\robert.mocanu\.nuget\packages\microsoft.orleans.core\3.6.0\lib\net6.0\Orleans.Core.dll
@@ -159,17 +158,6 @@ Reference:C:\Users\robert.mocanu\.nuget\packages\microsoft.orleans.orleansprovid
 Reference:C:\Users\robert.mocanu\.nuget\packages\swashbuckle.aspnetcore.swagger\6.2.3\lib\net6.0\Swashbuckle.AspNetCore.Swagger.dll
 Reference:C:\Users\robert.mocanu\.nuget\packages\swashbuckle.aspnetcore.swaggergen\6.2.3\lib\net6.0\Swashbuckle.AspNetCore.SwaggerGen.dll
 Reference:C:\Users\robert.mocanu\.nuget\packages\swashbuckle.aspnetcore.swaggerui\6.2.3\lib\net6.0\Swashbuckle.AspNetCore.SwaggerUI.dll
-=======
-Reference:C:\Users\ioan.manolea\.nuget\packages\newtonsoft.json\13.0.1\lib\netstandard2.0\Newtonsoft.Json.dll
-Reference:C:\Users\ioan.manolea\.nuget\packages\microsoft.orleans.core.abstractions\3.6.0\lib\netstandard2.0\Orleans.Core.Abstractions.dll
-Reference:C:\Users\ioan.manolea\.nuget\packages\microsoft.orleans.core\3.6.0\lib\net6.0\Orleans.Core.dll
-Reference:C:\Users\ioan.manolea\.nuget\packages\microsoft.orleans.runtime.abstractions\3.6.0\lib\netstandard2.0\Orleans.Runtime.Abstractions.dll
-Reference:C:\Users\ioan.manolea\.nuget\packages\microsoft.orleans.orleansruntime\3.6.0\lib\net6.0\Orleans.Runtime.dll
-Reference:C:\Users\ioan.manolea\.nuget\packages\microsoft.orleans.transactions\3.6.0\lib\netstandard2.0\Orleans.Transactions.dll
-Reference:C:\Users\ioan.manolea\.nuget\packages\swashbuckle.aspnetcore.swagger\6.2.3\lib\net6.0\Swashbuckle.AspNetCore.Swagger.dll
-Reference:C:\Users\ioan.manolea\.nuget\packages\swashbuckle.aspnetcore.swaggergen\6.2.3\lib\net6.0\Swashbuckle.AspNetCore.SwaggerGen.dll
-Reference:C:\Users\ioan.manolea\.nuget\packages\swashbuckle.aspnetcore.swaggerui\6.2.3\lib\net6.0\Swashbuckle.AspNetCore.SwaggerUI.dll
->>>>>>> 87d02820bcb3fb1ab03e7d66aeb6bd912c55f0de
 Reference:C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\6.0.11\ref\net6.0\System.AppContext.dll
 Reference:C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\6.0.11\ref\net6.0\System.Buffers.dll
 Reference:C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\6.0.11\ref\net6.0\System.Collections.Concurrent.dll
@@ -324,11 +312,7 @@ Reference:C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\6.0.11\ref\net
 Reference:C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\6.0.11\ref\net6.0\System.Xml.XmlSerializer.dll
 Reference:C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\6.0.11\ref\net6.0\System.Xml.XPath.dll
 Reference:C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\6.0.11\ref\net6.0\System.Xml.XPath.XDocument.dll
-Reference:C:\Users\ioan.manolea\Desktop\proj\BankAccountBE\WebAPI\bin\Debug\net6.0\WebAPI.dll
+Reference:C:\Users\robert.mocanu\Desktop\bankTransfer\BankAccountBE\WebAPI\bin\Debug\net6.0\WebAPI.dll
 Reference:C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\6.0.11\ref\net6.0\WindowsBase.dll
 DefineConstants:TRACE,DEBUG,NET,NET6_0,NETCOREAPP
-<<<<<<< HEAD
 InputHash:7c784777cb036d9e4b0e1fe56e1656c137285534
-=======
-InputHash:f6ef55f61d89f62e48b828e78a461d40be4c84c3
->>>>>>> 87d02820bcb3fb1ab03e7d66aeb6bd912c55f0de

@@ -68,7 +68,6 @@ C:\Users\robert.mocanu\Desktop\bankTransfer\BankAccountBE\AccountTransfer.Grains
 C:\Users\robert.mocanu\Desktop\bankTransfer\BankAccountBE\AccountTransfer.Grains\bin\Debug\net6.0\WebAPI.dll
 C:\Users\robert.mocanu\Desktop\bankTransfer\BankAccountBE\AccountTransfer.Grains\bin\Debug\net6.0\AccountTransfer.Interfaces.pdb
 C:\Users\robert.mocanu\Desktop\bankTransfer\BankAccountBE\AccountTransfer.Grains\bin\Debug\net6.0\WebAPI.pdb
-<<<<<<< HEAD
 C:\Users\robert.mocanu\Desktop\bankTransfer\BankAccountBE\AccountTransfer.Grains\obj\Debug\net6.0\AccountTransfer.Grains.csproj.AssemblyReference.cache
 C:\Users\robert.mocanu\Desktop\bankTransfer\BankAccountBE\AccountTransfer.Grains\obj\Debug\net6.0\AccountTransfer.Grains.orleans.g.args.txt
 C:\Users\robert.mocanu\Desktop\bankTransfer\BankAccountBE\AccountTransfer.Grains\obj\Debug\net6.0\AccountTransfer.Grains.orleans.g.cs
@@ -81,29 +80,3 @@ C:\Users\robert.mocanu\Desktop\bankTransfer\BankAccountBE\AccountTransfer.Grains
 C:\Users\robert.mocanu\Desktop\bankTransfer\BankAccountBE\AccountTransfer.Grains\obj\Debug\net6.0\refint\AccountTransfer.Grains.dll
 C:\Users\robert.mocanu\Desktop\bankTransfer\BankAccountBE\AccountTransfer.Grains\obj\Debug\net6.0\AccountTransfer.Grains.pdb
 C:\Users\robert.mocanu\Desktop\bankTransfer\BankAccountBE\AccountTransfer.Grains\obj\Debug\net6.0\ref\AccountTransfer.Grains.dll
-=======
-C:\Users\ioan.manolea\Desktop\proj\BankAccountBE\AccountTransfer.Grains\bin\Debug\net6.0\WebAPI.deps.json
-C:\Users\ioan.manolea\Desktop\proj\BankAccountBE\AccountTransfer.Grains\bin\Debug\net6.0\WebAPI.runtimeconfig.json
-C:\Users\ioan.manolea\Desktop\proj\BankAccountBE\AccountTransfer.Grains\bin\Debug\net6.0\appsettings.Development.json
-C:\Users\ioan.manolea\Desktop\proj\BankAccountBE\AccountTransfer.Grains\bin\Debug\net6.0\appsettings.json
-C:\Users\ioan.manolea\Desktop\proj\BankAccountBE\AccountTransfer.Grains\bin\Debug\net6.0\WebAPI.exe
-C:\Users\ioan.manolea\Desktop\proj\BankAccountBE\AccountTransfer.Grains\bin\Debug\net6.0\AccountTransfer.Grains.deps.json
-C:\Users\ioan.manolea\Desktop\proj\BankAccountBE\AccountTransfer.Grains\bin\Debug\net6.0\AccountTransfer.Grains.dll
-C:\Users\ioan.manolea\Desktop\proj\BankAccountBE\AccountTransfer.Grains\bin\Debug\net6.0\AccountTransfer.Grains.pdb
-C:\Users\ioan.manolea\Desktop\proj\BankAccountBE\AccountTransfer.Grains\bin\Debug\net6.0\AccountTransfer.Interfaces.dll
-C:\Users\ioan.manolea\Desktop\proj\BankAccountBE\AccountTransfer.Grains\bin\Debug\net6.0\WebAPI.dll
-C:\Users\ioan.manolea\Desktop\proj\BankAccountBE\AccountTransfer.Grains\bin\Debug\net6.0\AccountTransfer.Interfaces.pdb
-C:\Users\ioan.manolea\Desktop\proj\BankAccountBE\AccountTransfer.Grains\bin\Debug\net6.0\WebAPI.pdb
-C:\Users\ioan.manolea\Desktop\proj\BankAccountBE\AccountTransfer.Grains\obj\Debug\net6.0\AccountTransfer.Grains.csproj.AssemblyReference.cache
-C:\Users\ioan.manolea\Desktop\proj\BankAccountBE\AccountTransfer.Grains\obj\Debug\net6.0\AccountTransfer.Grains.orleans.g.args.txt
-C:\Users\ioan.manolea\Desktop\proj\BankAccountBE\AccountTransfer.Grains\obj\Debug\net6.0\AccountTransfer.Grains.orleans.g.cs
-C:\Users\ioan.manolea\Desktop\proj\BankAccountBE\AccountTransfer.Grains\obj\Debug\net6.0\AccountTransfer.Grains.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\ioan.manolea\Desktop\proj\BankAccountBE\AccountTransfer.Grains\obj\Debug\net6.0\AccountTransfer.Grains.AssemblyInfoInputs.cache
-C:\Users\ioan.manolea\Desktop\proj\BankAccountBE\AccountTransfer.Grains\obj\Debug\net6.0\AccountTransfer.Grains.AssemblyInfo.cs
-C:\Users\ioan.manolea\Desktop\proj\BankAccountBE\AccountTransfer.Grains\obj\Debug\net6.0\AccountTransfer.Grains.csproj.CoreCompileInputs.cache
-C:\Users\ioan.manolea\Desktop\proj\BankAccountBE\AccountTransfer.Grains\obj\Debug\net6.0\AccountTransfer.Grains.csproj.CopyComplete
-C:\Users\ioan.manolea\Desktop\proj\BankAccountBE\AccountTransfer.Grains\obj\Debug\net6.0\AccountTransfer.Grains.dll
-C:\Users\ioan.manolea\Desktop\proj\BankAccountBE\AccountTransfer.Grains\obj\Debug\net6.0\refint\AccountTransfer.Grains.dll
-C:\Users\ioan.manolea\Desktop\proj\BankAccountBE\AccountTransfer.Grains\obj\Debug\net6.0\AccountTransfer.Grains.pdb
-C:\Users\ioan.manolea\Desktop\proj\BankAccountBE\AccountTransfer.Grains\obj\Debug\net6.0\ref\AccountTransfer.Grains.dll
->>>>>>> 87d02820bcb3fb1ab03e7d66aeb6bd912c55f0de

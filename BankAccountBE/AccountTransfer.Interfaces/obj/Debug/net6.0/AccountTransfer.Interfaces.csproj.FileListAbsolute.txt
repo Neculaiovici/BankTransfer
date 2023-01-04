@@ -40,7 +40,6 @@ D:\Dev\bankTransfer\BankAccountBE\AccountTransfer.Interfaces\obj\Debug\net6.0\Ac
 D:\Dev\bankTransfer\BankAccountBE\AccountTransfer.Interfaces\obj\Debug\net6.0\refint\AccountTransfer.Interfaces.dll
 D:\Dev\bankTransfer\BankAccountBE\AccountTransfer.Interfaces\obj\Debug\net6.0\AccountTransfer.Interfaces.pdb
 D:\Dev\bankTransfer\BankAccountBE\AccountTransfer.Interfaces\obj\Debug\net6.0\ref\AccountTransfer.Interfaces.dll
-<<<<<<< HEAD
 C:\Users\robert.mocanu\Desktop\bankTransfer\BankAccountBE\AccountTransfer.Interfaces\bin\Debug\net6.0\AccountTransfer.Interfaces.deps.json
 C:\Users\robert.mocanu\Desktop\bankTransfer\BankAccountBE\AccountTransfer.Interfaces\bin\Debug\net6.0\AccountTransfer.Interfaces.dll
 C:\Users\robert.mocanu\Desktop\bankTransfer\BankAccountBE\AccountTransfer.Interfaces\bin\Debug\net6.0\AccountTransfer.Interfaces.pdb
@@ -55,19 +54,3 @@ C:\Users\robert.mocanu\Desktop\bankTransfer\BankAccountBE\AccountTransfer.Interf
 C:\Users\robert.mocanu\Desktop\bankTransfer\BankAccountBE\AccountTransfer.Interfaces\obj\Debug\net6.0\refint\AccountTransfer.Interfaces.dll
 C:\Users\robert.mocanu\Desktop\bankTransfer\BankAccountBE\AccountTransfer.Interfaces\obj\Debug\net6.0\AccountTransfer.Interfaces.pdb
 C:\Users\robert.mocanu\Desktop\bankTransfer\BankAccountBE\AccountTransfer.Interfaces\obj\Debug\net6.0\ref\AccountTransfer.Interfaces.dll
-=======
-C:\Users\ioan.manolea\Desktop\proj\BankAccountBE\AccountTransfer.Interfaces\bin\Debug\net6.0\AccountTransfer.Interfaces.deps.json
-C:\Users\ioan.manolea\Desktop\proj\BankAccountBE\AccountTransfer.Interfaces\bin\Debug\net6.0\AccountTransfer.Interfaces.dll
-C:\Users\ioan.manolea\Desktop\proj\BankAccountBE\AccountTransfer.Interfaces\bin\Debug\net6.0\AccountTransfer.Interfaces.pdb
-C:\Users\ioan.manolea\Desktop\proj\BankAccountBE\AccountTransfer.Interfaces\obj\Debug\net6.0\AccountTransfer.Interfaces.csproj.AssemblyReference.cache
-C:\Users\ioan.manolea\Desktop\proj\BankAccountBE\AccountTransfer.Interfaces\obj\Debug\net6.0\AccountTransfer.Interfaces.orleans.g.args.txt
-C:\Users\ioan.manolea\Desktop\proj\BankAccountBE\AccountTransfer.Interfaces\obj\Debug\net6.0\AccountTransfer.Interfaces.orleans.g.cs
-C:\Users\ioan.manolea\Desktop\proj\BankAccountBE\AccountTransfer.Interfaces\obj\Debug\net6.0\AccountTransfer.Interfaces.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\ioan.manolea\Desktop\proj\BankAccountBE\AccountTransfer.Interfaces\obj\Debug\net6.0\AccountTransfer.Interfaces.AssemblyInfoInputs.cache
-C:\Users\ioan.manolea\Desktop\proj\BankAccountBE\AccountTransfer.Interfaces\obj\Debug\net6.0\AccountTransfer.Interfaces.AssemblyInfo.cs
-C:\Users\ioan.manolea\Desktop\proj\BankAccountBE\AccountTransfer.Interfaces\obj\Debug\net6.0\AccountTransfer.Interfaces.csproj.CoreCompileInputs.cache
-C:\Users\ioan.manolea\Desktop\proj\BankAccountBE\AccountTransfer.Interfaces\obj\Debug\net6.0\AccountTransfer.Interfaces.dll
-C:\Users\ioan.manolea\Desktop\proj\BankAccountBE\AccountTransfer.Interfaces\obj\Debug\net6.0\refint\AccountTransfer.Interfaces.dll
-C:\Users\ioan.manolea\Desktop\proj\BankAccountBE\AccountTransfer.Interfaces\obj\Debug\net6.0\AccountTransfer.Interfaces.pdb
-C:\Users\ioan.manolea\Desktop\proj\BankAccountBE\AccountTransfer.Interfaces\obj\Debug\net6.0\ref\AccountTransfer.Interfaces.dll
->>>>>>> 87d02820bcb3fb1ab03e7d66aeb6bd912c55f0de
