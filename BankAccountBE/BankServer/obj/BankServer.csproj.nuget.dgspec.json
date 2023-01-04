@@ -216,6 +216,10 @@
               "target": "Package",
               "version": "[3.6.0, )"
             },
+            "Microsoft.Orleans.OrleansTelemetryConsumers.Counters": {
+              "target": "Package",
+              "version": "[3.6.0, )"
+            },
             "Microsoft.Orleans.Server": {
               "target": "Package",
               "version": "[3.6.0, )"
@@ -223,6 +227,10 @@
             "Microsoft.Orleans.Transactions": {
               "target": "Package",
               "version": "[3.6.0, )"
+            },
+            "OrleansDashboard": {
+              "target": "Package",
+              "version": "[3.6.2, )"
             }
           },
           "imports": [
@@ -292,6 +300,10 @@
             "Microsoft.Orleans.Core": {
               "target": "Package",
               "version": "[3.6.0, )"
+            },
+            "OrleansDashboard": {
+              "target": "Package",
+              "version": "[3.6.2, )"
             },
             "Swashbuckle.AspNetCore": {
               "target": "Package",

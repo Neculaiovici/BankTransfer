@@ -152,6 +152,9 @@ Reference:C:\Users\robert.mocanu\.nuget\packages\microsoft.orleans.core\3.6.0\li
 Reference:C:\Users\robert.mocanu\.nuget\packages\microsoft.orleans.runtime.abstractions\3.6.0\lib\netstandard2.0\Orleans.Runtime.Abstractions.dll
 Reference:C:\Users\robert.mocanu\.nuget\packages\microsoft.orleans.orleansruntime\3.6.0\lib\net6.0\Orleans.Runtime.dll
 Reference:C:\Users\robert.mocanu\.nuget\packages\microsoft.orleans.transactions\3.6.0\lib\netstandard2.0\Orleans.Transactions.dll
+Reference:C:\Users\robert.mocanu\.nuget\packages\orleansdashboard.core\3.6.2\lib\netstandard2.0\OrleansDashboard.Core.dll
+Reference:C:\Users\robert.mocanu\.nuget\packages\orleansdashboard\3.6.2\lib\net5.0\OrleansDashboard.dll
+Reference:C:\Users\robert.mocanu\.nuget\packages\microsoft.orleans.orleansproviders\3.4.0\lib\netstandard2.0\OrleansProviders.dll
 Reference:C:\Users\robert.mocanu\.nuget\packages\swashbuckle.aspnetcore.swagger\6.2.3\lib\net6.0\Swashbuckle.AspNetCore.Swagger.dll
 Reference:C:\Users\robert.mocanu\.nuget\packages\swashbuckle.aspnetcore.swaggergen\6.2.3\lib\net6.0\Swashbuckle.AspNetCore.SwaggerGen.dll
 Reference:C:\Users\robert.mocanu\.nuget\packages\swashbuckle.aspnetcore.swaggerui\6.2.3\lib\net6.0\Swashbuckle.AspNetCore.SwaggerUI.dll
@@ -312,4 +315,4 @@ Reference:C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\6.0.11\ref\net
 Reference:C:\Users\robert.mocanu\Desktop\bankTransfer\BankAccountBE\WebAPI\bin\Debug\net6.0\WebAPI.dll
 Reference:C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\6.0.11\ref\net6.0\WindowsBase.dll
 DefineConstants:TRACE,DEBUG,NET,NET6_0,NETCOREAPP
-InputHash:aa90944497633c99ab19af440b66c53c7131364e
+InputHash:7c784777cb036d9e4b0e1fe56e1656c137285534

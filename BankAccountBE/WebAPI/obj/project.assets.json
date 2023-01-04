@@ -334,6 +334,12 @@
           }
         }
       },
+      "Microsoft.Orleans.Client/3.4.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Orleans.OrleansProviders": "3.4.0"
+        }
+      },
       "Microsoft.Orleans.Core/3.6.0": {
         "type": "package",
         "dependencies": {
@@ -388,6 +394,65 @@
           }
         }
       },
+      "Microsoft.Orleans.OrleansProviders/3.4.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Orleans.Core": "3.4.0",
+          "Microsoft.Orleans.Runtime.Abstractions": "3.4.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/OrleansProviders.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/OrleansProviders.dll": {
+            "related": ".pdb;.xml"
+          }
+        }
+      },
+      "Microsoft.Orleans.OrleansRuntime/3.4.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AspNetCore.Connections.Abstractions": "3.0.0",
+          "Microsoft.Extensions.Hosting.Abstractions": "3.0.0",
+          "Microsoft.Extensions.Options": "3.0.0",
+          "Microsoft.Orleans.Core": "3.4.0",
+          "Microsoft.Orleans.Runtime.Abstractions": "3.4.0",
+          "System.Buffers": "4.5.0",
+          "System.Memory": "4.5.3",
+          "System.Threading.Channels": "4.7.0",
+          "System.Threading.Tasks.Extensions": "4.5.4"
+        },
+        "compile": {
+          "lib/netcoreapp3.1/Orleans.Runtime.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/netcoreapp3.1/Orleans.Runtime.dll": {
+            "related": ".pdb;.xml"
+          }
+        }
+      },
+      "Microsoft.Orleans.Runtime.Abstractions/3.4.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.Hosting.Abstractions": "3.0.0",
+          "Microsoft.Extensions.Options": "3.0.0",
+          "Microsoft.Orleans.Core": "3.4.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/Orleans.Runtime.Abstractions.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/Orleans.Runtime.Abstractions.dll": {
+            "related": ".pdb;.xml"
+          }
+        }
+      },
       "Newtonsoft.Json/13.0.1": {
         "type": "package",
         "compile": {
@@ -399,6 +464,36 @@
           "lib/netstandard2.0/Newtonsoft.Json.dll": {
             "related": ".xml"
           }
+        }
+      },
+      "OrleansDashboard/3.6.2": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Orleans.Core": "3.4.0",
+          "Microsoft.Orleans.OrleansRuntime": "3.4.0",
+          "OrleansDashboard.Core": "3.6.2",
+          "System.Collections.Immutable": "5.0.0"
+        },
+        "compile": {
+          "lib/net5.0/OrleansDashboard.dll": {}
+        },
+        "runtime": {
+          "lib/net5.0/OrleansDashboard.dll": {}
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
+      },
+      "OrleansDashboard.Core/3.6.2": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Orleans.Client": "3.4.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/OrleansDashboard.Core.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/OrleansDashboard.Core.dll": {}
         }
       },
       "Swashbuckle.AspNetCore/6.2.3": {
@@ -1158,6 +1253,18 @@
         "microsoft.openapi.nuspec"
       ]
     },
+    "Microsoft.Orleans.Client/3.4.0": {
+      "sha512": "TPTn35e1ynSDZhRMLdA0Pp4ey7FoxUBkA6R1+KCvmHtN4eDtAatBVDCu8ioWaTQWclYqoLo6wR6Xq2+7SaZ3pw==",
+      "type": "package",
+      "path": "microsoft.orleans.client/3.4.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "logo_128.png",
+        "microsoft.orleans.client.3.4.0.nupkg.sha512",
+        "microsoft.orleans.client.nuspec"
+      ]
+    },
     "Microsoft.Orleans.Core/3.6.0": {
       "sha512": "Mwm3J+I6/qtqhIe5/LSomCqaKEGdKr/amZlF1lXKzTH9gDXMGB2jjvrGgh56AhNW5D+I+5919HwpO2YvVOoX1w==",
       "type": "package",
@@ -1190,6 +1297,54 @@
         "microsoft.orleans.core.abstractions.nuspec"
       ]
     },
+    "Microsoft.Orleans.OrleansProviders/3.4.0": {
+      "sha512": "E2zUjJhY+lJrdnA6y5mC3ezZdq4KKMdGBePlBib4KvHXvW+KtTOZCmA40jKV5VDyEfdL+f+vlDXl5RYvyUiz1g==",
+      "type": "package",
+      "path": "microsoft.orleans.orleansproviders/3.4.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/netstandard2.0/OrleansProviders.dll",
+        "lib/netstandard2.0/OrleansProviders.pdb",
+        "lib/netstandard2.0/OrleansProviders.xml",
+        "logo_128.png",
+        "microsoft.orleans.orleansproviders.3.4.0.nupkg.sha512",
+        "microsoft.orleans.orleansproviders.nuspec"
+      ]
+    },
+    "Microsoft.Orleans.OrleansRuntime/3.4.0": {
+      "sha512": "NFnEfBHZmJW6P0wNH3tWKdqGxOKroPORYZ2RYw8wEXeh7JtFXIPtFMQeYID6ZJsuMeO1/OxNOxwKygJymmzTjA==",
+      "type": "package",
+      "path": "microsoft.orleans.orleansruntime/3.4.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/netcoreapp3.1/Orleans.Runtime.dll",
+        "lib/netcoreapp3.1/Orleans.Runtime.pdb",
+        "lib/netcoreapp3.1/Orleans.Runtime.xml",
+        "lib/netstandard2.0/Orleans.Runtime.dll",
+        "lib/netstandard2.0/Orleans.Runtime.pdb",
+        "lib/netstandard2.0/Orleans.Runtime.xml",
+        "logo_128.png",
+        "microsoft.orleans.orleansruntime.3.4.0.nupkg.sha512",
+        "microsoft.orleans.orleansruntime.nuspec"
+      ]
+    },
+    "Microsoft.Orleans.Runtime.Abstractions/3.4.0": {
+      "sha512": "+8deCOkQZhfGzokgtotud1C4MFmQEDn7kzU6dnAocteldT/QCR7AiTzXP0udMJa0L4H6xSJIKpQ5kRZpEPyFgg==",
+      "type": "package",
+      "path": "microsoft.orleans.runtime.abstractions/3.4.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/netstandard2.0/Orleans.Runtime.Abstractions.dll",
+        "lib/netstandard2.0/Orleans.Runtime.Abstractions.pdb",
+        "lib/netstandard2.0/Orleans.Runtime.Abstractions.xml",
+        "logo_128.png",
+        "microsoft.orleans.runtime.abstractions.3.4.0.nupkg.sha512",
+        "microsoft.orleans.runtime.abstractions.nuspec"
+      ]
+    },
     "Newtonsoft.Json/13.0.1": {
       "sha512": "ppPFpBcvxdsfUonNcvITKqLl3bqxWbDCZIzDWHzjpdAHRFfZe0Dw9HmA0+za13IdyrgJwpkDTDA9fHaxOrt20A==",
       "type": "package",
@@ -1215,6 +1370,32 @@
         "newtonsoft.json.13.0.1.nupkg.sha512",
         "newtonsoft.json.nuspec",
         "packageIcon.png"
+      ]
+    },
+    "OrleansDashboard/3.6.2": {
+      "sha512": "niUpaMkZ28tj5tjcKvaqswGXzPosoISQvKdCmUX/lDA5DUZEEIvzMDLxCz4uEGkoVWN3wr66XRCGrtOKyGvNoA==",
+      "type": "package",
+      "path": "orleansdashboard/3.6.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "OrleansLogo.png",
+        "lib/net5.0/OrleansDashboard.dll",
+        "orleansdashboard.3.6.2.nupkg.sha512",
+        "orleansdashboard.nuspec"
+      ]
+    },
+    "OrleansDashboard.Core/3.6.2": {
+      "sha512": "X+wpsiDGfCKbWobUvgQpzw9aqtNMjzTNxKJX7tjz0ANcECLuyH9xiP48CZlhJYBX9SKYL3Ga+LlZLUAkhLtAtA==",
+      "type": "package",
+      "path": "orleansdashboard.core/3.6.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "OrleansLogo.png",
+        "lib/netstandard2.0/OrleansDashboard.Core.dll",
+        "orleansdashboard.core.3.6.2.nupkg.sha512",
+        "orleansdashboard.core.nuspec"
       ]
     },
     "Swashbuckle.AspNetCore/6.2.3": {
@@ -1876,6 +2057,7 @@
     "net6.0": [
       "AccountTransfer.Interfaces >= 1.0.0",
       "Microsoft.Orleans.Core >= 3.6.0",
+      "OrleansDashboard >= 3.6.2",
       "Swashbuckle.AspNetCore >= 6.2.3"
     ]
   },
@@ -1930,6 +2112,10 @@
           "Microsoft.Orleans.Core": {
             "target": "Package",
             "version": "[3.6.0, )"
+          },
+          "OrleansDashboard": {
+            "target": "Package",
+            "version": "[3.6.2, )"
           },
           "Swashbuckle.AspNetCore": {
             "target": "Package",
