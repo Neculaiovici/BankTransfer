@@ -1,15 +1,15 @@
 LogLevel:Warning
-ProjectPath:C:\Users\robert.mocanu\Desktop\bankTransfer\BankAccountBE\AccountTransfer.Interfaces\AccountTransfer.Interfaces.csproj
+ProjectPath:C:\Users\ioan.manolea\Desktop\proj\BankAccountBE\AccountTransfer.Interfaces\AccountTransfer.Interfaces.csproj
 ProjectGuid:
 AssemblyName:AccountTransfer.Interfaces
 OutputType:Library
-TargetPath:C:\Users\robert.mocanu\Desktop\bankTransfer\BankAccountBE\AccountTransfer.Interfaces\bin\Debug\net6.0\AccountTransfer.Interfaces.dll
-CodeGenOutputFile:C:\Users\robert.mocanu\Desktop\bankTransfer\BankAccountBE\AccountTransfer.Interfaces\obj\Debug\net6.0\AccountTransfer.Interfaces.orleans.g.cs
-Compile:C:\Users\robert.mocanu\Desktop\bankTransfer\BankAccountBE\AccountTransfer.Interfaces\IAccountGrain.cs
-Compile:C:\Users\robert.mocanu\Desktop\bankTransfer\BankAccountBE\AccountTransfer.Interfaces\IAtmGrain.cs
-Compile:C:\Users\robert.mocanu\Desktop\bankTransfer\BankAccountBE\AccountTransfer.Interfaces\ICreateGrain.cs
-Compile:C:\Users\robert.mocanu\Desktop\bankTransfer\BankAccountBE\AccountTransfer.Interfaces\States\BankAccountState.cs
-Compile:C:\Users\robert.mocanu\Desktop\bankTransfer\BankAccountBE\AccountTransfer.Interfaces\obj\Debug\net6.0\AccountTransfer.Interfaces.GlobalUsings.g.cs
+TargetPath:C:\Users\ioan.manolea\Desktop\proj\BankAccountBE\AccountTransfer.Interfaces\bin\Debug\net6.0\AccountTransfer.Interfaces.dll
+CodeGenOutputFile:C:\Users\ioan.manolea\Desktop\proj\BankAccountBE\AccountTransfer.Interfaces\obj\Debug\net6.0\AccountTransfer.Interfaces.orleans.g.cs
+Compile:C:\Users\ioan.manolea\Desktop\proj\BankAccountBE\AccountTransfer.Interfaces\IAccountGrain.cs
+Compile:C:\Users\ioan.manolea\Desktop\proj\BankAccountBE\AccountTransfer.Interfaces\IAtmGrain.cs
+Compile:C:\Users\ioan.manolea\Desktop\proj\BankAccountBE\AccountTransfer.Interfaces\ICreateGrain.cs
+Compile:C:\Users\ioan.manolea\Desktop\proj\BankAccountBE\AccountTransfer.Interfaces\States\BankAccountState.cs
+Compile:C:\Users\ioan.manolea\Desktop\proj\BankAccountBE\AccountTransfer.Interfaces\obj\Debug\net6.0\AccountTransfer.Interfaces.GlobalUsings.g.cs
 Reference:C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\6.0.11\ref\net6.0\Microsoft.CSharp.dll
 Reference:C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\6.0.11\ref\net6.0\Microsoft.VisualBasic.Core.dll
 Reference:C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\6.0.11\ref\net6.0\Microsoft.VisualBasic.dll
@@ -17,7 +17,7 @@ Reference:C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\6.0.11\ref\net
 Reference:C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\6.0.11\ref\net6.0\Microsoft.Win32.Registry.dll
 Reference:C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\6.0.11\ref\net6.0\mscorlib.dll
 Reference:C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\6.0.11\ref\net6.0\netstandard.dll
-Reference:C:\Users\robert.mocanu\.nuget\packages\microsoft.orleans.core.abstractions\3.6.0\lib\netstandard2.0\Orleans.Core.Abstractions.dll
+Reference:C:\Users\ioan.manolea\.nuget\packages\microsoft.orleans.core.abstractions\3.6.0\lib\netstandard2.0\Orleans.Core.Abstractions.dll
 Reference:C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\6.0.11\ref\net6.0\System.AppContext.dll
 Reference:C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\6.0.11\ref\net6.0\System.Buffers.dll
 Reference:C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\6.0.11\ref\net6.0\System.Collections.Concurrent.dll
@@ -171,4 +171,4 @@ Reference:C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\6.0.11\ref\net
 Reference:C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\6.0.11\ref\net6.0\System.Xml.XPath.XDocument.dll
 Reference:C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\6.0.11\ref\net6.0\WindowsBase.dll
 DefineConstants:TRACE,DEBUG,NET,NET6_0,NETCOREAPP
-InputHash:ca7d8e3d77fc5caf996600da6c77ddecbca1937c
+InputHash:ff9f390ca468202929ed744d8900bc13885f4163

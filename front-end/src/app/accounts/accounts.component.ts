@@ -1,17 +1,21 @@
 import { Component, OnInit } from '@angular/core';
 import { ServicesService } from '../services.service';
 import { Account } from '../models/account.interface';
-import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { FormBuilder, FormControl, FormGroup, Validators } from '@angular/forms';
 import { HttpResponseBase } from '@angular/common/http';
+declare var bootstrap: any;
 
 @Component({
   selector: 'app-accounts',
   templateUrl: './accounts.component.html',
-  styleUrls: ['./accounts.component.scss']
+  styleUrls: ['./accounts.component.scss'],
 })
+
 export class AccountsComponent implements OnInit {
 
-  public account:any = []
+  public account: any = []
+
+  editFC = new FormControl();
 
   //transfer form
   transferFC: FormGroup = this.fb.group({
@@ -21,19 +25,19 @@ export class AccountsComponent implements OnInit {
       Validators.email,
       Validators.required
     ])],
-    'toEmail': 
-    ['', Validators.compose([
-      Validators.minLength(5),
-      Validators.maxLength(20),
-      Validators.email,
-      Validators.required
-    ])],
+    'toEmail':
+      ['', Validators.compose([
+        Validators.minLength(5),
+        Validators.maxLength(20),
+        Validators.email,
+        Validators.required
+      ])],
     'amount':
-    ['', Validators.compose([
-      Validators.minLength(1),
-      Validators.maxLength(10),
-      Validators.required
-    ])]
+      ['', Validators.compose([
+        Validators.minLength(1),
+        Validators.maxLength(10),
+        Validators.required
+      ])]
   })
 
   //create form
@@ -44,50 +48,51 @@ export class AccountsComponent implements OnInit {
       Validators.email,
       Validators.required
     ])],
-    'fullName': 
-    ['', Validators.compose([
-      Validators.minLength(5),
-      Validators.maxLength(20),
-      Validators.email,
-      Validators.required
-    ])],
+    'fullName':
+      ['', Validators.compose([
+        Validators.minLength(5),
+        Validators.maxLength(20),
+        Validators.email,
+        Validators.required
+      ])],
     'exp':
-    ['', Validators.compose([
-      Validators.minLength(1),
-      Validators.maxLength(10),
-      Validators.required
-    ])],
+      ['', Validators.compose([
+        Validators.minLength(1),
+        Validators.maxLength(10),
+        Validators.required
+      ])],
     'balance':
-    ['', Validators.compose([
-      Validators.minLength(1),
-      Validators.maxLength(10),
-      Validators.required
-    ])]
+      ['', Validators.compose([
+        Validators.minLength(1),
+        Validators.maxLength(10),
+        Validators.required
+      ])]
   })
 
-  constructor(private fb: FormBuilder,private services: ServicesService) { }
+  constructor(private fb: FormBuilder, private services: ServicesService) { }
 
   ngOnInit(): void {
     this.GetAllAccounts()
     console.log(this.account)
+    document.getElementById('editModal')?.addEventListener('hidden.bs.modal', () => this.accounts.reset())
   }
 
   //get all accounts
-  GetAllAccounts(){
-    this.services.getAccount().subscribe((data:Account) => {
+  GetAllAccounts() {
+    this.services.getAccount().subscribe((data: Account) => {
       this.account = data,
-      localStorage.setItem('accounts', JSON.stringify(data))
+        localStorage.setItem('accounts', JSON.stringify(data))
     })
   }
 
   //transfer
-  submit(){
+  submit() {
     const fromEmail = this.transferFC.value.fromEmail
     const toEmail = this.transferFC.value.toEmail
     const amount = this.transferFC.value.amount
-    return this.services.trensferMoney(fromEmail, toEmail, amount).subscribe( () => {
+    return this.services.trensferMoney(fromEmail, toEmail, amount).subscribe(() => {
       this.GetAllAccounts(), //view refresh
-      this.handleError
+        this.handleError
     })
   }
 
@@ -98,10 +103,23 @@ export class AccountsComponent implements OnInit {
     const exp = this.accounts.value.exp
     const balance = Number(this.accounts.value.balance)
 
-    return this.services.createAccount(email, fullName, exp, balance).subscribe( () => {
+    return this.services.createAccount(email, fullName, exp, balance).subscribe(() => {
+      this.accounts.reset();
       this.GetAllAccounts(), //view refresh
-      this.handleError
+        this.handleError
     })
+  }
+
+  // handle edit modal
+  editModal(acc: Account) {
+    var editModal = new bootstrap.Modal(document.getElementById('editModal'))
+
+    this.accounts.controls['fullName'].setValue(acc.fullName);
+    this.accounts.controls['balance'].setValue(acc.balance);
+    this.accounts.controls['exp'].setValue(acc.exp);
+    this.accounts.controls['email'].setValue(acc.email);
+
+    editModal.show();
   }
 
   //error handler
