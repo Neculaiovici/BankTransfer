@@ -123,6 +123,10 @@
               "target": "Package",
               "version": "[3.6.0, )"
             },
+            "OrleansDashboard": {
+              "target": "Package",
+              "version": "[3.6.2, )"
+            },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
               "version": "[6.2.3, )"

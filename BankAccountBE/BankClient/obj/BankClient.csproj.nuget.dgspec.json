@@ -130,6 +130,10 @@
             "Microsoft.Orleans.Transactions": {
               "target": "Package",
               "version": "[3.6.0, )"
+            },
+            "OrleansDashboard": {
+              "target": "Package",
+              "version": "[3.6.2, )"
             }
           },
           "imports": [

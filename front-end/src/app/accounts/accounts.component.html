@@ -1,5 +1,8 @@
 <div class="container">
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> main
     <div class="ctrls">
         <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#registerModal"
             data-bs-whatever="@getbootstrap">Add
@@ -8,13 +11,24 @@
         <button type="button" class="btn btn-outline-primary transfer" data-bs-toggle="modal"
             data-bs-target="#transferModal" data-bs-whatever="@getbootstrap">
             Transfer</button>
+<<<<<<< HEAD
     </div>
     <div class="row cards-cotaniner">
+=======
+
+    </div>
+    
+    <div class="row cards-cotaniner" *ngIf="account.length; else noAccount">
+>>>>>>> main
         <div class="card" *ngFor="let acc of account">
             <img src="../../assets/integrisoft-logo.png" alt="image" class="logo">
             <div class="top">
                 <h1>Current Balance</h1>
+<<<<<<< HEAD
                 <h2>${{acc.balance}}</h2>
+=======
+                <h2>{{acc.balance | currency}}</h2>
+>>>>>>> main
             </div>
 
             <div class="bottom">
@@ -27,6 +41,13 @@
         </div>
     </div>
 
+<<<<<<< HEAD
+=======
+    <ng-template #noAccount>
+        <h2 class="mt-5">No data available...</h2>
+    </ng-template>
+
+>>>>>>> main
     <!-- REGISTER MODAL -->
     <div class="modal fade" id="registerModal" tabindex="-1" aria-labelledby="registerModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered">
@@ -36,6 +57,7 @@
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body cmbody">
+<<<<<<< HEAD
                     <form>
                         <div class="mb-3">
                             <input type="text" class="form-control" id="fullName" placeholder="Full Name">
@@ -54,6 +76,32 @@
                 <div class="modal-footer justify-content-center">
                     <button type="button" class="btn btn-outline-primary text-center customBtn">Create</button>
                 </div>
+=======
+                    <form [formGroup]="accounts" (ngSubmit)="create()">
+                        <div class="mb-3">
+                            <input type="text" class="form-control" name="fullName" placeholder="Full Name"
+                                formControlName="fullName">
+                        </div>
+                        <div class="mb-3">
+                            <input type="text" class="form-control" name="email" placeholder="Email"
+                                formControlName="email">
+                        </div>
+                        <div class="mb-3">
+                            <input type="text" class="form-control" name="balance" placeholder="Balance"
+                                formControlName="balance">
+                        </div>
+                        <div class="mb-3">
+                            <input type="text" class="form-control" name="expdate" placeholder="Exp Date"
+                                formControlName="exp">
+                        </div>
+                        <div class="modal-footer justify-content-center">
+                            <button type="button" class="btn btn-outline-primary text-center customBtn"
+                                (click)="create()" data-bs-dismiss="modal">Create</button>
+                        </div>
+                    </form>
+                </div>
+
+>>>>>>> main
             </div>
         </div>
     </div>
@@ -67,6 +115,7 @@
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body cmbody">
+<<<<<<< HEAD
                     <form>
                         <div class="mb-3">
                             <input type="text" class="form-control" id="email" placeholder="From (Email)">
@@ -94,5 +143,28 @@
         </ul>
         <button type="button" class="btn btn-primary" (click)="refreshAccountList()">refresh</button>
 >>>>>>> 34e4253c8dd88c472a390d289e89f4a88b0757b9
+=======
+                    <form [formGroup]="transferFC" (ngSubmit)="submit()">
+                        <div class="mb-3">
+                            <input type="text" class="form-control" name="email" placeholder="From (Email)"
+                                formControlName="fromEmail">
+                        </div>
+                        <div class="mb-3">
+                            <input type="text" class="form-control" name="email" placeholder="To (Email)"
+                                formControlName="toEmail">
+                        </div>
+                        <div class="mb-3">
+                            <input type="text" class="form-control" name="balance" placeholder="Balance"
+                                formControlName="amount">
+                        </div>
+                        <div class="modal-footer justify-content-center">
+                            <button type="button" class="btn btn-outline-primary text-center customBtn"
+                                data-bs-dismiss="modal" (click)="submit()">Transfer</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+>>>>>>> main
     </div>
 </div>

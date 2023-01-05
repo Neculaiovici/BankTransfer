@@ -28,6 +28,7 @@ p {
     margin: 10px;
     border: 0px;
     overflow: hidden;
+<<<<<<< HEAD
 
     &:hover {
         transform: scale(1.05);
@@ -35,6 +36,14 @@ p {
         border: 1px solid #fff;
         box-shadow: 0 14px 14px rgba(0, 0, 0, 0.2);
         transition-duration: 0.5s;
+=======
+    transition-duration: 0.3s;
+
+    &:hover {
+        transform: scale(1.05);
+        transform: rotate(2deg);
+        box-shadow: 0 14px 14px rgba(0, 0, 0, 0.2);
+>>>>>>> main
         z-index: 999;
     }
 

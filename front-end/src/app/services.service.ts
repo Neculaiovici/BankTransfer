@@ -9,7 +9,8 @@ import { Account } from './models/account.interface';
 })
 export class ServicesService {
  //url api
-  private url = 'http://localhost:4200/api/client'
+  private url = 'http://localhost:4200/api/client';
+
   constructor(private http: HttpClient) { }
 
   //get accounts
@@ -36,7 +37,6 @@ export class ServicesService {
     return this.http.post(`${this.url}/transfer`, body, {headers: headers, observe: 'response', reportProgress: true})
       .pipe(catchError(this.handleError));
   }
-
 
   //error
   handleError(error: any){

@@ -10,6 +10,7 @@
         "dependencies": {
           "AccountTransfer.Interfaces": "1.0.0",
           "Microsoft.Orleans.Core": "3.6.0",
+          "OrleansDashboard": "3.6.2",
           "Swashbuckle.AspNetCore": "6.2.3"
         },
         "runtime": {
@@ -123,6 +124,11 @@
           }
         }
       },
+      "Microsoft.Orleans.Client/3.4.0": {
+        "dependencies": {
+          "Microsoft.Orleans.OrleansProviders": "3.4.0"
+        }
+      },
       "Microsoft.Orleans.Core/3.6.0": {
         "dependencies": {
           "Microsoft.AspNetCore.Connections.Abstractions": "6.0.0",
@@ -167,11 +173,80 @@
           }
         }
       },
+      "Microsoft.Orleans.OrleansProviders/3.4.0": {
+        "dependencies": {
+          "Microsoft.Orleans.Core": "3.6.0",
+          "Microsoft.Orleans.Runtime.Abstractions": "3.4.0"
+        },
+        "runtime": {
+          "lib/netstandard2.0/OrleansProviders.dll": {
+            "assemblyVersion": "2.0.0.0",
+            "fileVersion": "2.0.0.0"
+          }
+        }
+      },
+      "Microsoft.Orleans.OrleansRuntime/3.4.0": {
+        "dependencies": {
+          "Microsoft.AspNetCore.Connections.Abstractions": "6.0.0",
+          "Microsoft.Extensions.Hosting.Abstractions": "6.0.0",
+          "Microsoft.Extensions.Options": "6.0.0",
+          "Microsoft.Orleans.Core": "3.6.0",
+          "Microsoft.Orleans.Runtime.Abstractions": "3.4.0",
+          "System.Buffers": "4.5.1",
+          "System.Memory": "4.5.4",
+          "System.Threading.Channels": "6.0.0",
+          "System.Threading.Tasks.Extensions": "4.5.4"
+        },
+        "runtime": {
+          "lib/netcoreapp3.1/Orleans.Runtime.dll": {
+            "assemblyVersion": "2.0.0.0",
+            "fileVersion": "2.0.0.0"
+          }
+        }
+      },
+      "Microsoft.Orleans.Runtime.Abstractions/3.4.0": {
+        "dependencies": {
+          "Microsoft.Extensions.Hosting.Abstractions": "6.0.0",
+          "Microsoft.Extensions.Options": "6.0.0",
+          "Microsoft.Orleans.Core": "3.6.0"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Orleans.Runtime.Abstractions.dll": {
+            "assemblyVersion": "2.0.0.0",
+            "fileVersion": "2.0.0.0"
+          }
+        }
+      },
       "Newtonsoft.Json/13.0.1": {
         "runtime": {
           "lib/netstandard2.0/Newtonsoft.Json.dll": {
             "assemblyVersion": "13.0.0.0",
             "fileVersion": "13.0.1.25517"
+          }
+        }
+      },
+      "OrleansDashboard/3.6.2": {
+        "dependencies": {
+          "Microsoft.Orleans.Core": "3.6.0",
+          "Microsoft.Orleans.OrleansRuntime": "3.4.0",
+          "OrleansDashboard.Core": "3.6.2",
+          "System.Collections.Immutable": "6.0.0"
+        },
+        "runtime": {
+          "lib/net5.0/OrleansDashboard.dll": {
+            "assemblyVersion": "3.6.2.0",
+            "fileVersion": "3.6.2.0"
+          }
+        }
+      },
+      "OrleansDashboard.Core/3.6.2": {
+        "dependencies": {
+          "Microsoft.Orleans.Client": "3.4.0"
+        },
+        "runtime": {
+          "lib/netstandard2.0/OrleansDashboard.Core.dll": {
+            "assemblyVersion": "3.6.2.0",
+            "fileVersion": "3.6.2.0"
           }
         }
       },
@@ -417,6 +492,13 @@
       "path": "microsoft.openapi/1.2.3",
       "hashPath": "microsoft.openapi.1.2.3.nupkg.sha512"
     },
+    "Microsoft.Orleans.Client/3.4.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-TPTn35e1ynSDZhRMLdA0Pp4ey7FoxUBkA6R1+KCvmHtN4eDtAatBVDCu8ioWaTQWclYqoLo6wR6Xq2+7SaZ3pw==",
+      "path": "microsoft.orleans.client/3.4.0",
+      "hashPath": "microsoft.orleans.client.3.4.0.nupkg.sha512"
+    },
     "Microsoft.Orleans.Core/3.6.0": {
       "type": "package",
       "serviceable": true,
@@ -431,12 +513,47 @@
       "path": "microsoft.orleans.core.abstractions/3.6.0",
       "hashPath": "microsoft.orleans.core.abstractions.3.6.0.nupkg.sha512"
     },
+    "Microsoft.Orleans.OrleansProviders/3.4.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-E2zUjJhY+lJrdnA6y5mC3ezZdq4KKMdGBePlBib4KvHXvW+KtTOZCmA40jKV5VDyEfdL+f+vlDXl5RYvyUiz1g==",
+      "path": "microsoft.orleans.orleansproviders/3.4.0",
+      "hashPath": "microsoft.orleans.orleansproviders.3.4.0.nupkg.sha512"
+    },
+    "Microsoft.Orleans.OrleansRuntime/3.4.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-NFnEfBHZmJW6P0wNH3tWKdqGxOKroPORYZ2RYw8wEXeh7JtFXIPtFMQeYID6ZJsuMeO1/OxNOxwKygJymmzTjA==",
+      "path": "microsoft.orleans.orleansruntime/3.4.0",
+      "hashPath": "microsoft.orleans.orleansruntime.3.4.0.nupkg.sha512"
+    },
+    "Microsoft.Orleans.Runtime.Abstractions/3.4.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-+8deCOkQZhfGzokgtotud1C4MFmQEDn7kzU6dnAocteldT/QCR7AiTzXP0udMJa0L4H6xSJIKpQ5kRZpEPyFgg==",
+      "path": "microsoft.orleans.runtime.abstractions/3.4.0",
+      "hashPath": "microsoft.orleans.runtime.abstractions.3.4.0.nupkg.sha512"
+    },
     "Newtonsoft.Json/13.0.1": {
       "type": "package",
       "serviceable": true,
       "sha512": "sha512-ppPFpBcvxdsfUonNcvITKqLl3bqxWbDCZIzDWHzjpdAHRFfZe0Dw9HmA0+za13IdyrgJwpkDTDA9fHaxOrt20A==",
       "path": "newtonsoft.json/13.0.1",
       "hashPath": "newtonsoft.json.13.0.1.nupkg.sha512"
+    },
+    "OrleansDashboard/3.6.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-niUpaMkZ28tj5tjcKvaqswGXzPosoISQvKdCmUX/lDA5DUZEEIvzMDLxCz4uEGkoVWN3wr66XRCGrtOKyGvNoA==",
+      "path": "orleansdashboard/3.6.2",
+      "hashPath": "orleansdashboard.3.6.2.nupkg.sha512"
+    },
+    "OrleansDashboard.Core/3.6.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-X+wpsiDGfCKbWobUvgQpzw9aqtNMjzTNxKJX7tjz0ANcECLuyH9xiP48CZlhJYBX9SKYL3Ga+LlZLUAkhLtAtA==",
+      "path": "orleansdashboard.core/3.6.2",
+      "hashPath": "orleansdashboard.core.3.6.2.nupkg.sha512"
     },
     "Swashbuckle.AspNetCore/6.2.3": {
       "type": "package",

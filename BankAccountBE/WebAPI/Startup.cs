@@ -1,5 +1,7 @@
 ﻿using AccountTransfer.Interfaces;
+using Microsoft.Extensions.Options;
 using Orleans;
+using Orleans.Hosting;
 using System.Xml.Linq;
 
 namespace WebAPI
@@ -27,7 +29,6 @@ namespace WebAPI
                 .Build();
 
             client.Connect().Wait();
-
 
             return client;
         }
