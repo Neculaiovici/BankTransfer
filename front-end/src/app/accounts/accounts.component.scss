@@ -16,7 +16,7 @@ p {
 .card {
     position: relative;
     padding: 20px;
-    background: linear-gradient(214.13deg, #FFFFFF 8.59%, #55BEC5 49.08%, #3A49F9 82.56%);
+    background: url('../../assets/card-mask.png'), linear-gradient(214.13deg, #FFFFFF 8.59%, #55BEC5 49.08%, #3A49F9 82.56%);
     border-radius: 18px;
     width: 315px;
     height: 184px;
@@ -30,11 +30,15 @@ p {
     overflow: hidden;
     transition-duration: 0.3s;
 
+    &::before{
+        background-image: url('../../assets/card-mask.png');
+    }
     &:hover {
         transform: scale(1.05);
         transform: rotate(2deg);
         box-shadow: 0 14px 14px rgba(0, 0, 0, 0.2);
         z-index: 999;
+        cursor: pointer;
     }
 
     .logo {

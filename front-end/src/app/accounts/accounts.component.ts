@@ -3,6 +3,7 @@ import { ServicesService } from '../services.service';
 import { Account } from '../models/account.interface';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { HttpResponseBase } from '@angular/common/http';
+declare var bootstrap: any;
 
 @Component({
   selector: 'app-accounts',
@@ -70,6 +71,7 @@ export class AccountsComponent implements OnInit {
   ngOnInit(): void {
     this.GetAllAccounts()
     console.log(this.account)
+    document.getElementById('editModal')?.addEventListener('hidden.bs.modal', () => this.accounts.reset())
   }
 
   //get all accounts
@@ -102,6 +104,17 @@ export class AccountsComponent implements OnInit {
       this.GetAllAccounts(), //view refresh
       this.handleError
     })
+  }
+
+  editModal(acc: Account) {
+    var editModal = new bootstrap.Modal(document.getElementById('editModal'))
+
+    this.accounts.controls['fullName'].setValue(acc.fullName);
+    this.accounts.controls['balance'].setValue(acc.balance);
+    this.accounts.controls['exp'].setValue(acc.exp);
+    this.accounts.controls['email'].setValue(acc.email);
+
+    editModal.show();
   }
 
   //error handler
