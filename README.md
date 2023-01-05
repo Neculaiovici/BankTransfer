@@ -7,7 +7,7 @@ Simple app for bank transfer
 - Orleans
 ## Creators
 ![manoleaioan](https://tleapps.com)
-![Neculaiovici](https://tleapps.com)
+![Neculaiovici](https://avatars.githubusercontent.com/u/16610056?v=4)
 ![petreacatalin](https://tleapps.com)
 
 
