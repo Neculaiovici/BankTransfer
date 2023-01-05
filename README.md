@@ -6,9 +6,9 @@ Simple app for bank transfer
 - C#
 - Orleans
 ## Creators
-![manoleaioan](https://tleapps.com)
+![manoleaioan](https://avatars.githubusercontent.com/u/41291784?v=4)
 ![Neculaiovici](https://avatars.githubusercontent.com/u/16610056?v=4)
-![petreacatalin](https://tleapps.com)
+![petreacatalin](https://avatars.githubusercontent.com/u/94062067?v=4)
 
 
 
